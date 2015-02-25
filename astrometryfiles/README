@@ -1,0 +1,10 @@
+This directory contains files relevant to KPNO 4m MOSAIC Astrometry. 
+
+correctastrom.cl:
+ IRAF script to filter the default astrometric catalog made by the MOSAIC astrometry program to those stars in USNOB1 with reliable data. It then does the required book keeping and formats the file for rerunning the astrometry using the proper reference catalog.
+
+astromprep.sh:
+ Shell script to make lists for converting XY coordinates into RA/Dec using the header astrometry in each of the eight Mosaic chips. It makes the proper input for the WCSCTRAN procedure.
+
+pasteastrometry.sh:
+ Shell script to take wcsctran output and put it back together with the photometry. 
