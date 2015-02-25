@@ -1,5 +1,4 @@
-ALLFRAME is a code that uses PSFs derived for a set of images to simultaneously photometer those images 
- using a master source list. 
+ALLFRAME is a code that uses PSFs derived for a set of images to simultaneously photometer those images using a master source list. 
 
 The directory contains a OPT file for allframe (allframe.opt), 
   a shell script to run allframe (allframe.sh),
