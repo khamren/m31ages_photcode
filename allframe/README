@@ -1,0 +1,7 @@
+ALLFRAME is a code that uses PSFs derived for a set of images to simultaneously photometer those images 
+ using a master source list. 
+
+The directory contains a OPT file for allframe (allframe.opt), 
+  a shell script to run allframe (allframe.sh),
+  a shell script to run allframe on a set of 8 chip directories for Mosaic (runallframe.sh),
+ and a code to run daophot (quickly) on an allframe co-added all filter image (rundaophot.allf.sh).
