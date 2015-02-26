@@ -1,0 +1,10 @@
+Codes relating to getting the S/N ratio in the images in order to properly combine them for
+ the master source list.
+ 
+ getweights_k.sh
+ ===============
+ Karrie's awk/sed/magic script to determine the weights using the log files
+ 
+ rmweights.sh
+ ============
+ remove the weights files after I muck them up by doing something stupid
