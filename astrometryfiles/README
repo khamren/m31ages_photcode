@@ -8,3 +8,6 @@ astromprep.sh:
 
 pasteastrometry.sh:
  Shell script to take wcsctran output and put it back together with the photometry. 
+ 
+runastrom.cl:
+ simple IRAF-shell script to do all the steps for the eight chips of mosiac in one go.
