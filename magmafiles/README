@@ -1,0 +1,13 @@
+magma -- MAGnitudes out of Mike's Ass 
+
+This is a really nice piece of code that takes your photometric transformation 
+ equations, airmass, and aperture corrections for each individual frame. 
+The code can bootstrap observations taken in 1 filter without transformations 
+ to exposures in the same filter with transformations by looking for common stars.
+
+One particular nice piece of the code is that it iteratively sovles -- per star --
+ for a color that is self consistent (i.e. with all corrections taken into account 
+ does the color still work?). 
+ 
+The "rlb" version is special coded for not having to interact with the code for the
+ SPLASH Washington photometry (i.e. M, T and D51). 

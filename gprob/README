@@ -1,0 +1,25 @@
+gprob is the giant probability code in fortran originally written by Jamie.
+
+I keep thinking to rewrite it, but its a long, messy, and poorly documented code. so i dont.
+
+gprob.f
+=======
+Uses Washington photometry and a fiducial MW dwarf sequence to determine a given star's probability of
+ being and M31 giant star. gprob is the ratio of the area of the star's error circle inside 
+ and outside of a fiducial MW sequence, with 1 being high (100% within the giant box) and 
+ 0 being low (0% being in the box). 
+ 
+Definitely could use an upgrade. Some of the complexity in the code is just trying to use fortran
+ to do certain things that are much easier done in modern codes. For example, one has to write their
+ own integrator and crap like that. 
+
+MODIFICATIONS:
+==============
+I would envision also writing a code called mprob (mstar probability) that does the same thing using a fiducial AGB
+ selection box in a NIR CMD (i.e. brighter than the TRGB and redder than X). 
+ This will of course select both giants and dwarfs, so additional work would be necessary 
+ to separate giant from dwarf -- probably using the optical photometry. 
+The easiest means would be to use a modified gprob diagnostic tracking the M sequnce for red optical colors. 
+ Unfortunately, the separation is not as clean as for warmer stars, but its a start!
+Beyond that, I would envision doing a rough SED using the 3 optical bands, 2 NIR bands, and 2 MIR bands 
+ (where appropriate) that might also provide classification information for the star type (maybe?). 

@@ -1,5 +1,12 @@
-makemag 
+makemag:
 
+makemag takes the individual magnitude files from ALLFRAME and matches them across the filters using 
+ the mch file. 
+This works like daomaster, but takes *all* sources that match between frames and does not make assumptions
+ abount how the magnitudes should track one another. 
+It will not recompute shifts. 
+
+recompile notes:
 -----------
 14 Feb 2011: made version makemag_morelines.f
 -----------

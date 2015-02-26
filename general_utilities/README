@@ -1,0 +1,13 @@
+A grab bag of things:
+
+read_als.pro, read_dao_header.pro, read_lst.pro, read_raw.pro
+==============================================================
+-- Short and sweet codes to pull in various file types associated wtih daophot outputs and return a structure.
+
+quick_idl_plots.readin
+=======================
+-- "command line" IDL script to read in a file and make diagnostic plots
+
+clean_psf_list.pro
+===================
+-- IDL code to use previous runs of the photometry to clean out a PSF list

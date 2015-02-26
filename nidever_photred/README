@@ -1,0 +1,5 @@
+
+PhotRed is an attempt to pipeline the image processing and photometry for the MOSAIC camera.
+The pipeline is based on the procedures listed here, but optimized on short exposures of the LMC & SMC.
+Thus, it is not terribly robust to images with high sky backgrounds or long exposures with funny PSFs 
+(those that commonly occur with wind).

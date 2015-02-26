@@ -1,0 +1,9 @@
+This is allfprep, an IRAF code that does iterative source finding using an 
+ ingenious combination of SExtractor and DAOPhot.
+
+The two versions are the original implementation by Jamie Osthemier (misspelled most likely) circa 2000 and my edited
+ version when I inherited the code in 2008 (?). The latter should have comments and explanations and work with 
+ modern versions of IRAF. 
+ 
+Most of the code is actually doing relatively simple things that are hard to do in IRAF, and will likely be easy
+ to do in python. 
