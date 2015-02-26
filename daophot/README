@@ -1,0 +1,43 @@
+Files related to running command line DAOPhot.
+
+apcor.opt, photo.opt
+====================
+OPT input files for daophot that give a list of concentric radii for the aperture photometry routines. 
+ photo.opt is for doing photometry
+ apcor.opt is for the aperture corrections
+I think they have become identical.
+
+autopsf.sh / autopsf.uva2.sh / daophot.sh
+==========================================
+Shell scripts to run daophot and use the fortan codes lstfilter & goodpsf to manipulate the 
+ output from PSF (i.e. remove craptastic stars).
+
+getpsf.sh
+=========
+Minimalist daophot script to do a quick PSF. I used primarily on the all-filter stacked image because 
+I really didn't need more than a guestimate of the PSF.
+
+getsky.sh
+=========
+I think this just gets the DAOPhot Sky value and pipes it to a log file so that we can pull what DAOPhot
+thinks the sky is to sort out issues.
+
+goodpsf.f (goodpsf)
+====================
+fortran code to go through the psf list and remove stars that are obviously bad, but daophot picked anyway. 
+quite handy, but can be buggy because its fortran and files must be formatted EXACTLY the way it wants. 
+to work properly, there must be sources that fit the criteria.
+in exceptionally bad conditions, this will not work well.
+most failures of autopsf happen here.
+
+lstfilter.f (lstfilter)
+========================
+filters out out bad sources from the lst file.
+to work properly, there must be good sources!
+quite handy (again), but can be buggy. Most failures of autopsf happen here.
+
+rundaophot.allf.sh
+===================
+wrapper to run the scripts on all the filter-stacked files that are sorted into directories by chip.
+
+
