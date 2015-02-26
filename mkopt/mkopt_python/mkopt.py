@@ -4,10 +4,12 @@ import numpy as np
 
 from ConvenienceFuncs import resistant_mean
 
-WRITE OUT PHOTO.OPT
-- what is readnoise keyword
-- what is the saturate keyword and what does it do
-- do we want all the values for a non-existant file to be zero?
+Problems with this code:
+1- the values for the raw images and the values for the images with the sky background added will be quite different. Thus, I do not know what default values to put.
+2- No saturate keyword in NIR fits files
+3- No readnoise keyword in NIR fits files
+
+
 '''
 This code makes the opt files for FITS files to be used with DAOPHOT and ALLSTAR
 It was ported into python from mkopt_hst.pro
@@ -58,6 +60,26 @@ It was ported into python from mkopt_hst.pro
 ; IS,OS : inner and outer sky annalus
 
 '''
+
+#initialize values
+LO =  15.0
+TH =  3.5
+LS =  0.2
+HS =  1.0
+LR = -1.0
+HR =  1.0
+WA = -2
+VA =  2
+AN = -6
+EX =  5
+PE =  0.75
+PR =  5.00
+CR =  2.5
+CE =  6.0
+MA = 50.
+RED = 1.0
+WA2 = 0.0
+RE = 1.0
 
 #initialize the ability to call IDL
 idl = pidly.IDL()
@@ -111,7 +133,7 @@ def mkopt(inpt, **kwargs):
         head = pyfits.getheader(fle)
         im = pyfits.getdata(fle)
 
-        #Get filename, exptime, gain, readnoise, FWHM, Hi-limit and filter
+        #Get filename, gain, readnoise, FWHM, Hi-limit
     
         #get gain
         if cts:
@@ -120,27 +142,27 @@ def mkopt(inpt, **kwargs):
             gain = 1.0
 
         #get readnoise
-        rdnoise = head['READNOISE KEYWORD']
+        #rdnoise = head['READNOISE KEYWORD']
 
         #get fwhm using D. Nidever's iwfm.pro
-        idl.pro('iwfm, fwhm', files[i], im=im)
+        idl.pro('iwfm, fwhm', fle, im=im)
         fwhm = idl.fwhm
 
         #get Hi-limit
-        hilim = max(im) - 0.20*max(im)
+        hilim = max(im.flatten()) - 0.20*max(im.flatten())
         hilim = np.floor(hilim/100.)*100
 
         #get saturation limit
-        saturate = head['SATURATE']
-        if saturate == 0:
-            staturate = hilimit
+        #saturate = head['SATURATE']
+        #if saturate == 0:
+        #    staturate = hilimit
 
         #minimum of all saturation levels
         hi = max(lolimit,(min(saturate-4000.0, hilimit)))
 
         #append data to arrays
         gaarr.append(gain)
-        rdarr.append(rdnoise)
+        #rdarr.append(rdnoise)
         fwarr.append(fwhm)
         hiarr.append(hi)
 
@@ -170,14 +192,14 @@ def mkopt(inpt, **kwargs):
     for i in range(nfiles):
         fle = filarr[i]
         GA = gaarr[i]
-        RD = rdarr[i]
+        #RD = rdarr[i]
         FW = fwarr[i]
         HI = hiarr[i]
 
         #Calculating some things
-        RE = RD/GA
+        #RE = RD/GA
         FI = FW
-        PS = (4.0*FW) < 51       # daophot won't accept anything higher than 51
+        PS = min((4.0*FW),51)       # daophot won't accept anything higher than 51
         IS = FI - 1.0
         OS = PS + 1.0
 
