@@ -1,0 +1,17 @@
+
+Jun 27 13:44: IMCOMBINE
+  combine = average, scale = none, zero = none, weight = @weights
+  reject = avsigclip, mclip = yes, nkeep = 1
+  lsigma = 3., hsigma = 3.
+  blank = 0.
+  statsec = Jun 27 13:44
+                Images  Weight
+      obj184_1.out.fits  0.239
+      obj179_1.out.fits  0.250
+      obj182_1.out.fits  0.209
+      obj185_1.out.fits  0.240
+      obj175_1.out.fits  0.010
+      obj180_1.out.fits  0.019
+      obj183_1.out.fits  0.033
+
+  Output image = allf_1.fits, ncombine = 7

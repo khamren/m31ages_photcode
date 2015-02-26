@@ -1,0 +1,353 @@
+===================================
+== Step 1 : Construct PSF ver. 1 ==
+===================================
+
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.24         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.24
+                 PSF RADIUS =    12.95                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.24         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.24
+                 PSF RADIUS =    12.95                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     obj179_1...                   
+
+
+                                      Picture size:   2048  4096
+
+
+ Command: 
+      Sky mode and standard deviation =  346.708   16.339
+
+              Clipped mean and median =  348.662  348.011
+   Number of pixels used (after clip) = 9,622
+                       Relative error = 0.96
+
+                 Number of frames averaged, summed:          File for positions (default obj179_1.coo): 
+ 
+
+   5419 stars.
+
+
+                           Are you happy with this? 
+ Command: 
+      File with aperture radii (default photo.opt): 
+  A1  RADIUS OF APERTURE  1 =     3.00     A2  RADIUS OF APERTURE  2 =     3.80
+  A3  RADIUS OF APERTURE  3 =     4.80     A4  RADIUS OF APERTURE  4 =     6.08
+  A5  RADIUS OF APERTURE  5 =     7.69     A6  RADIUS OF APERTURE  6 =     9.74
+  A7  RADIUS OF APERTURE  7 =    12.32     A8  RADIUS OF APERTURE  8 =    15.60
+  A9  RADIUS OF APERTURE  9 =    19.74     AA  RADIUS OF APERTURE 10 =    24.98
+  AB  RADIUS OF APERTURE 11 =    31.61     AC  RADIUS OF APERTURE 12 =    40.00
+  IS       INNER SKY RADIUS =    45.00     OS       OUTER SKY RADIUS =    50.00
+
+ PHO> 
+        Input position file (default obj179_1.coo):                  Output file (default obj179_1.ap): 
+  Estimated magnitude limit (Aperture 1): 17.0 +- 0.5 per star.                  
+
+
+ Command: 
+             Input file name (default obj179_1.ap):        Desired number of stars, faintest magnitude:            Output file name (default obj179_1.lst): 
+       100 suitable candidates were found.
+
+
+ Command: 
+
+ Good bye.
+
+
+===================================
+== Step 2 : Construct PSF ver. 2 ==
+===================================
+
+
+=============================================
+== Step 3 : Construct final version of PSF ==
+=============================================
+
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.24         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.24
+                 PSF RADIUS =    12.95                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.24         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.24
+                 PSF RADIUS =    12.95                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     obj179_1...                   
+
+
+                                      Picture size:   2048  4096
+
+
+ Command: 
+        File with photometry (default obj179_1.ap):           File with the PSF (default obj179_1.psf):                                   Critical overlap:     File for stellar groups (default obj179_1.grp): 
+ Size of   Number of
+  group     groups
+
+      1       201
+      2         6
+      3         2
+
+    219 stars in  209 groups.  
+
+
+ Command: 
+          File with the PSF (default obj179_1.psf):    File with stellar groups (default obj179_1.grp):            File for results (default obj179_1.nst): 
+ Star      71 has disappeared.
+ Star     112 has disappeared.
+ Star     317 has disappeared.
+ Star     327 has disappeared.
+ Star     411 has disappeared.
+ Star     441 has disappeared.
+ Star     625 has disappeared.
+ Star     638 has disappeared.
+ Star     652 has disappeared.
+ Star     766 has disappeared.
+ Star     770 has disappeared.
+ Star     798 has disappeared.
+ Star     801 has disappeared.
+ Star     841 has disappeared.
+ Star     952 has disappeared.
+ Star     978 has disappeared.
+ Star    1081 has disappeared.
+ Star    1416 has disappeared.
+ Star    1622 has disappeared.
+ Star    1752 has disappeared.
+ Star    1863 has disappeared.
+ Star    2018 has disappeared.
+ Star    2052 has disappeared.
+ Star    2151 has disappeared.
+ Star    2364 has disappeared.
+ Star    2396 has disappeared.
+ Star    2460 has disappeared.
+ Star    2462 has disappeared.
+ Star    2472 has disappeared.
+ Star    2554 has disappeared.
+ Star    2602 has disappeared.
+ Star    2668 has disappeared.
+ Star    3256 has disappeared.
+ Star    3358 has disappeared.
+ Star    3360 has disappeared.
+ Star    3820 has disappeared.
+ Star    4130 has disappeared.
+ Star    4148 has disappeared.
+ Star    4172 has disappeared.
+ Star    4201 has disappeared.
+ Star    4203 has disappeared.
+ Star    4419 has disappeared.
+ Star    4438 has disappeared.
+ Star    4626 has disappeared.
+ Star    4669 has disappeared.
+ Star    4777 has disappeared.
+ Star    4829 has disappeared.
+ Star    4970 has disappeared.
+ Star    5165 has disappeared.
+ Star    1854 has disappeared.
+ Star    2130 has disappeared.
+ Star    2142 has disappeared.
+ Star    1765 has disappeared.
+ Star    2603 has disappeared.
+
+    Done.  
+
+
+ Command: 
+          File with the PSF (default obj179_1.psf):        File with photometry (default obj179_1.nst):                      Do you have stars to leave in?         File with star list (default obj179_1.lst):      Name for subtracted image (default obj179_1s): 
+ Command: 
+ Command: 
+
+ Good bye.
+
+
+===========================
+== Step 4 : Run ALLSTAR. ==
+===========================
+
+
+             FITTING RADIUS =     2.98        CE (CLIPPING EXPONENT) =     6.00
+      REDETERMINE CENTROIDS =     1.00           CR (CLIPPING RANGE) =     2.50
+             WATCH PROGRESS =     0.00            MAXIMUM GROUP SIZE =    50.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+      IS (INNER SKY RADIUS) =     1.98         OS (OUTER SKY RADIUS) =    12.92
+
+ OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT> 
+             FITTING RADIUS =     3.24        CE (CLIPPING EXPONENT) =     6.00
+      REDETERMINE CENTROIDS =     1.00           CR (CLIPPING RANGE) =     2.50
+             WATCH PROGRESS =     0.00            MAXIMUM GROUP SIZE =    50.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+      IS (INNER SKY RADIUS) =     2.24         OS (OUTER SKY RADIUS) =    13.95
+
+                                  Input image name: 
+     obj179_1...                   
+
+
+                                      Picture size:   2048  4096
+
+
+          File with the PSF (default obj179_1.psf):                File with the PSF (default GIVE UP):                File with the PSF (default GIVE UP):                File with the PSF (default GIVE UP):                File with the PSF (default GIVE UP): 
+
+ Good bye.
+
+
+===============================================
+== Step 5 : Prepare for aperture correction. ==
+===============================================
+
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.24         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.24
+                 PSF RADIUS =    12.95                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.24         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.24
+                 PSF RADIUS =    12.95                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     obj179_1...                   
+
+
+                                      Picture size:   2048  4096
+
+
+ Command: 
+        File with photometry (default obj179_1.ap):           File with the PSF (default obj179_1.psf):                                   Critical overlap:     File for stellar groups (default obj179_1.grp): 
+ Size of   Number of
+  group     groups
+
+      1       177
+      2        15
+      3         4
+
+    219 stars in  196 groups.  
+
+
+ Command: 
+          File with the PSF (default obj179_1.psf):    File with stellar groups (default obj179_1.grp):            File for results (default obj179_1.nst): 
+ Star      71 has disappeared.
+ Star     112 has disappeared.
+ Star     317 has disappeared.
+ Star     327 has disappeared.
+ Star     411 has disappeared.
+ Star     441 has disappeared.
+ Star     625 has disappeared.
+ Star     638 has disappeared.
+ Star     652 has disappeared.
+ Star     766 has disappeared.
+ Star     770 has disappeared.
+ Star     801 has disappeared.
+ Star     841 has disappeared.
+ Star     952 has disappeared.
+ Star     978 has disappeared.
+ Star    1081 has disappeared.
+ Star    1416 has disappeared.
+ Star    1622 has disappeared.
+ Star    1752 has disappeared.
+ Star    1863 has disappeared.
+ Star    2018 has disappeared.
+ Star    2364 has disappeared.
+ Star    2396 has disappeared.
+ Star    2460 has disappeared.
+ Star    2462 has disappeared.
+ Star    2472 has disappeared.
+ Star    2554 has disappeared.
+ Star    2602 has disappeared.
+ Star    2668 has disappeared.
+ Star    3256 has disappeared.
+ Star    3358 has disappeared.
+ Star    3360 has disappeared.
+ Star    3820 has disappeared.
+ Star    4130 has disappeared.
+ Star    4148 has disappeared.
+ Star    4172 has disappeared.
+ Star    4201 has disappeared.
+ Star    4203 has disappeared.
+ Star    4419 has disappeared.
+ Star    4438 has disappeared.
+ Star    4626 has disappeared.
+ Star    4669 has disappeared.
+ Star    4777 has disappeared.
+ Star    4829 has disappeared.
+ Star    4970 has disappeared.
+ Star    5165 has disappeared.
+ Star     422 has disappeared.
+ Star     798 has disappeared.
+ Star    1854 has disappeared.
+ Star    2052 has disappeared.
+ Star    1765 has disappeared.
+ Star    2130 has disappeared.
+ Star    2142 has disappeared.
+ Star    2151 has disappeared.
+ Star    2603 has disappeared.
+
+    Done.  
+
+
+ Command: 
+          File with the PSF (default obj179_1.psf):        File with photometry (default obj179_1.nst):                      Do you have stars to leave in?         File with star list (default obj179_1.lst):      Name for subtracted image (default obj179_1s): 
+ Command: 
+ Command: 
+
+ Good bye.
+
+
+===============================================
+== Step 5 : Prepare for aperture correction. ==
+===============================================
+

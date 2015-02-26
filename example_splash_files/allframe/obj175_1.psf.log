@@ -1,0 +1,81 @@
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     4.60         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     4.60
+                 PSF RADIUS =    18.41                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     4.60         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     4.60
+                 PSF RADIUS =    18.41                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     obj175_1a...                  
+
+
+                                      Picture size:   2048  4096
+
+
+ Command: 
+ File with aperture results (default obj175_1a.ap):         File with PSF stars (default obj175_1.lst):            File for the PSF (default obj175_1.psf): 
+ This file already exists: obj175_1.psf                  
+
+          New output file name (default OVERWRITE): 
+
+
+       Chi    Parameters...
+>>   0.0394   2.64986   2.47214   
+>>   0.0458   1.68376   1.65634  -0.08381   
+>>   0.0118   2.18865   2.10002  -0.00044   
+>>   0.0114   2.25525   2.16448  -0.00034   
+>>   0.0455   2.00155   1.90631   0.00016   
+>>   0.0111   2.23134   2.14133   0.59862  -0.00054   
+
+
+ Profile errors:
+
+   1319  0.005      2908  0.019      2412  0.007      2645  0.009      2214  0.012   
+   3573  0.005       486  0.009      1997  0.011      3083  0.010      3307  0.012   
+   5673  0.011       294  0.009       673  0.012      3750  0.013      2591  0.012   
+   5245  0.007      1838  0.008      1455  0.007      5870  0.010      5322  0.015   
+   5740  0.007      5632  0.008      6174  0.012      5159  0.011      3438  0.015   
+   1389  0.009       693  0.007      3084  0.008      4362  0.009      1914  0.014   
+   2032  0.007       984  0.007       958  0.008      4534  0.010      1659  0.013   
+   4832  0.006      2057  0.009      6186  0.009      4042  0.012       279  0.015   
+   4331  0.006      1704  0.009       244  0.012       349  0.012       298  0.018   
+   5922  0.007      1657  0.009      4680  0.009      3596  0.010      1456  0.013   
+   2583  0.007      1759  0.011      4854  0.017       674  0.011      5129  0.017   
+   4888  0.008      2812  0.008       584  0.013      5388  0.015      6010  0.015   
+    454  0.009      6398  0.013      4738  0.009      5496  0.010      5757  0.018   
+   1875  0.007       945  0.009      4426  0.010      4563  0.010      4530  0.012   
+    509  0.007       129  0.012      5305  0.019      2735  0.019      1465  0.014   
+   1808  0.008       148  0.011      2786  0.010      4521  0.016      5490  0.014   
+   1444  0.007      3016  0.011      4255  0.012      2597  0.017      2216  0.017   
+
+
+
+ File with PSF stars and neighbors = obj175_1.nei                  
+
+ This file already exists: obj175_1.nei                  
+
+          New output file name (default OVERWRITE): 
+ Command: 
+
+ Good bye.
+

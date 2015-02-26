@@ -1,0 +1,84 @@
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.67         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.67
+                 PSF RADIUS =    14.67                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.67         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.67
+                 PSF RADIUS =    14.67                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     obj184_1a...                  
+
+
+                                      Picture size:   2048  4096
+
+
+ Command: 
+ File with aperture results (default obj184_1a.ap):         File with PSF stars (default obj184_1.lst):            File for the PSF (default obj184_1.psf): 
+ This file already exists: obj184_1.psf                  
+
+          New output file name (default OVERWRITE): 
+
+
+       Chi    Parameters...
+>>   0.0252   1.80854   1.75887   
+>>   0.0473   1.22445   1.27624   0.22115   
+>>   0.0201   1.58137   1.52879   0.03554   
+>>   0.0148   1.68568   1.63902   0.03132   
+>>   0.0539   1.48459   1.44728   0.04716   
+>>   0.0143   1.71858   1.66639   0.73562   0.03571   
+
+
+ Profile errors:
+
+   5165  0.013      6052  0.018       624  0.017      1661  0.014      3204  0.019   
+   3246  0.019      5003  0.014      2638  0.015      6089  0.014      4620  0.015   
+   1946  0.010      3186  0.016      1020  0.011      1718  0.011      1997  0.018   
+    437  0.014      3702  0.016      3681  0.014      1612  0.013      5060  0.013   
+   5782  0.013      5106  0.013       950  0.013       336  0.016       263  0.015   
+    936  0.012      1544  0.012      4684  0.012       867  0.015      1945  0.021   
+   2302  0.015      2399  0.014      1453  0.013      1246  0.014      2060  0.016   
+   2855  0.017       587  0.017      4430  0.016      2589  0.013      3074  0.016   
+    905  0.012       253  0.012       898  0.013      4867  0.016      6378  0.015   
+    442  0.013      3212  0.012      4731  0.015      3350  0.014      4471  0.016   
+   6562  0.012      5931  0.014      2123  0.019      6044  0.013      5479  0.015   
+   1672  0.018      6452  0.014      6566  0.014      2143  0.015      3910  0.015   
+   1226  0.012      5375  0.014       131  0.013      4591  0.015       413  0.013   
+   4226  0.023      3998  0.017      2204  0.017       382  0.012      6799  0.021   
+   5980  0.013      3603  0.014      1292  0.014      1476  0.013      3016  0.017   
+   2163  0.013      2883  0.019      5329  0.015      3309  0.024      4765  0.016   
+   5553  0.013      2491  0.012      1733  0.015      6713  0.017                    
+   1942  0.017      2509  0.016      3349  0.015      2178  0.017                    
+   6575  0.016      4570  0.014      5767  0.013      5297  0.018                    
+   4773  0.015      3147  0.013       873  0.013      2139  0.014                    
+
+
+
+ File with PSF stars and neighbors = obj184_1.nei                  
+
+ This file already exists: obj184_1.nei                  
+
+          New output file name (default OVERWRITE): 
+ Command: 
+
+ Good bye.
+

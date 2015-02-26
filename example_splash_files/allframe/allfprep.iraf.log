@@ -1,0 +1,31 @@
+mypackage> allfprep
+Image name that you want to use as psf (allf): 
+X montage offset value (44.): 
+Y montage offset value (37.): 36
+Is the SExtractor finding all the stars? (yes): no
+----- SExtractor 2.5.0 started on 2007-06-27 at 14:17:13 with 1 thread
+
+Measuring from: "R06A250"  / 1926 x 4002 / 32 bits FLOATING POINT data
+(M+D) Background: 1183.89    RMS: 7.08301    / Threshold: 7.08301    
+Objects: detected 11188    / sextracted 9318                   
+> All done (in 10 s)
+z1=1022.449 z2=1343.856
+Is the SExtractor finding all the stars? (no): yes
+Warning: Cannot access image (sex1s.fits)
+Warning: Cannot access image (sex1s.fits)
+Warning: Cannot access image (sex2s.fits)
+Warning: Attempt to delete a nonexistent file (sex.cmb)
+Warning: Attempt to delete a nonexistent file (sex.repl)
+Warning: Attempt to delete a nonexistent file (sex1.als)
+Warning: Attempt to delete a nonexistent file (sex1.off)
+Warning: Attempt to delete a nonexistent file (sex2.als)
+Warning: Attempt to delete a nonexistent file (sex2.cat)
+Warning: Attempt to delete a nonexistent file (sex2.off)
+30.633u 0.316s 0:31.11 99.4%    0+0k 0+0io 0pf+0w
+----- SExtractor 2.5.0 started on 2007-06-27 at 14:18:12 with 1 thread
+
+Measuring from: "R06A250"  / 1926 x 4002 / 32 bits FLOATING POINT data
+(M+D) Background: 1181.86    RMS: 8.32311    / Threshold: 8.32311    
+Objects: detected 2827     / sextracted 1706                   
+> All done (in 4 s)
+30.585u 0.336s 0:30.91 100.0%   0+0k 0+0io 0pf+0w

@@ -1,0 +1,8 @@
+paste chip1.radec	chip1.magma >	chip1.cat
+paste chip2.radec	chip2.magma >	chip2.cat
+paste chip3.radec	chip3.magma >	chip3.cat
+paste chip4.radec	chip4.magma >	chip4.cat
+paste chip5.radec	chip5.magma >	chip5.cat
+paste chip6.radec	chip6.magma >	chip6.cat
+paste chip7.radec	chip7.magma >	chip7.cat
+paste chip8.radec	chip8.magma >	chip8.cat

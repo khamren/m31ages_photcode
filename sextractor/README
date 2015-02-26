@@ -1,2 +1,7 @@
-Configuration files for Source Extractor that work well for detecting sources and are set 
- up for the inputs/outputs appropriate for mosiac.
+Configuration files for Source Extractor that work well for our purposes.
+
+The files __default.*__ with no information on the telescope/instrument should work fine for either 
+ newfirm or mosaic.
+ 
+I made a stab at changing the default.sex file for NEWFIRM -- the two parameters that are specific to the instrument
+are the saturation and the pixel scale. 

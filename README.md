@@ -9,7 +9,7 @@ We assume that the images are in units of counts, are split into chips, and are 
 
 1. __mkopt.pro (IDL):__ Fenerates the OPT files for command line DAOPHOT & ALLSTAR
 
-2. __[[CHECK THE NAME]].sh (Shell):__  (Calls: daophot, allstar, lstfilter, goodpsf); copies the OPT file; runs basic daophot, exits after a psf list; uses goodpsf and lstfilter to edit the psf list removing non-star like sources; finishes daophot doing a run through neighbor subtraction; runs allstar 
+2. __autopsf.uva2.sh (Shell):__  (Calls: daophot, allstar, lstfilter, goodpsf); copies the OPT file; runs basic daophot, exits after a psf list; uses goodpsf and lstfilter to edit the psf list removing non-star like sources; finishes daophot doing a run through neighbor subtraction; runs allstar 
 
 3. __daophotassess.sh (Shell):__ reads log files and produces a messy report of how daophot went, then MANUAL INTERVENTION to run PSF by hand (or whatever) orreprox the images (or whatever)
 

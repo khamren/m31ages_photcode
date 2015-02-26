@@ -1,0 +1,78 @@
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.27         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.27
+                 PSF RADIUS =    13.09                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.27         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.27
+                 PSF RADIUS =    13.09                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     obj183_1a...                  
+
+
+                                      Picture size:   2048  4096
+
+
+ Command: 
+ File with aperture results (default obj183_1a.ap):         File with PSF stars (default obj183_1.lst):            File for the PSF (default obj183_1.psf): 
+ This file already exists: obj183_1.psf                  
+
+          New output file name (default OVERWRITE): 
+
+
+       Chi    Parameters...
+>>   0.0267   1.66725   1.64523   
+>>   0.0460   1.16556   1.10797  -0.17984   
+>>   0.0138   1.47857   1.45000  -0.01540   
+>>   0.0135   1.53223   1.50257  -0.01348   
+>>   0.0473   1.31965   1.30139  -0.01365   
+>>   0.0132   1.50494   1.47319   0.60463  -0.02321   
+
+
+ Profile errors:
+
+   3392  0.011      2253  0.023      7558  0.009      9240  0.009      7276  0.010   
+   3253  0.013      8361  0.009      7190  0.025      7027  0.012      9587  0.010   
+   9190  0.010      6970  0.011      6632  0.011      9844  0.013      8458  0.011   
+   1152  0.021      3397  0.013      2852  0.013      9414  0.008      7367  0.011   
+   3840  0.012      1971  0.014      9167  0.013      3485  0.011      9083  0.010   
+   8127  0.009      8071  0.009      7772  0.009      9775  0.011      3790  0.012   
+   2973  0.010      1383  0.026      2288  0.019      8785  0.011      9814  0.012   
+   3237  0.011      2896  0.019      8959  0.010      4131  0.013      1629  0.023   
+   2230  0.021      3786  0.012      1701  0.016      2284  0.012      7846  0.011   
+   7882  0.010      3342  0.012      6919  0.011      9121  0.010      6370  0.013   
+   9103  0.009      8473  0.009      3168  0.011      6024  0.011                    
+   8748  0.017      6898  0.009      7399  0.010      7139  0.011                    
+   7001  0.009      9308  0.010      3767  0.014      6005  0.014                    
+   1202  0.013       903  0.018      6928  0.011      9106  0.011                    
+
+
+
+ File with PSF stars and neighbors = obj183_1.nei                  
+
+ This file already exists: obj183_1.nei                  
+
+          New output file name (default OVERWRITE): 
+ Command: 
+
+ Good bye.
+

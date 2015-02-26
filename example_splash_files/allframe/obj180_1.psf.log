@@ -1,0 +1,82 @@
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 22000.00
+             FWHM OF OBJECT =     4.00         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     4.00
+                 PSF RADIUS =    16.00                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 22000.00
+             FWHM OF OBJECT =     4.00         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     4.00
+                 PSF RADIUS =    16.00                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     obj180_1a...                  
+
+
+                                      Picture size:   2048  4096
+
+
+ Command: 
+ File with aperture results (default obj180_1a.ap):         File with PSF stars (default obj180_1.lst):            File for the PSF (default obj180_1.psf): 
+ This file already exists: obj180_1.psf                  
+
+          New output file name (default OVERWRITE): 
+
+
+       Chi    Parameters...
+>>   0.0350   1.94029   1.86030   
+>>   0.0424   1.41695   1.29684  -0.22258   
+>>   0.0228   1.70944   1.62314  -0.07537   
+>>   0.0209   1.80422   1.71804  -0.06539   
+>>   0.0550   1.57445   1.51159  -0.10352   
+>>   0.0209   1.80240   1.71209   0.68407  -0.08553   
+
+
+ Profile errors:
+
+    409  0.019      2343  0.023      5352  0.024      6006  0.021      1589  0.020   
+   2403  0.018      7265  0.020      7220  0.022       301  0.021      5896  0.019   
+   2594  0.018      5227  0.020      7369  0.017      5493  0.019      5324  0.019   
+   1853  0.019      6569  0.020      2819  0.020      4771  0.018       475  0.023   
+   7084  0.015      5761  0.018       943  0.023      5942  0.020       867  0.026   
+   6033  0.018      5473  0.017      1902  0.021      3228  0.021      5385  0.020   
+   6374  0.021      4986  0.018      4535  0.017      5817  0.018      4596  0.022   
+   5334  0.020      2308  0.020      7098  0.018       420  0.022      4148  0.023   
+   6763  0.033      7148  0.020      5428  0.019      1414  0.019      7191  0.023   
+   1871  0.026      5944  0.020      4524  0.026      2310  0.022      5957  0.021   
+   6455  0.017      1906  0.017      5530  0.018      3075  0.021      2783  0.023   
+   5305  0.016      1481  0.019      7478  0.019      5117  0.023       887  0.021   
+   2737  0.018      6956  0.023      7087  0.020      4200  0.022      6173  0.023   
+   1672  0.019      5247  0.018      6551  0.020      3962  0.022      5672  0.021   
+   6217  0.020      2545  0.020      5613  0.019      2044  0.020      3107  0.031   
+   1230  0.026      5641  0.019      3093  0.020      6122  0.022                    
+   2684  0.021      3072  0.021      7059  0.018      5453  0.020                    
+   3089  0.019      5254  0.017      1432  0.021      2683  0.019                    
+
+
+
+ File with PSF stars and neighbors = obj180_1.nei                  
+
+ This file already exists: obj180_1.nei                  
+
+          New output file name (default OVERWRITE): 
+ Command: 
+
+ Good bye.
+
