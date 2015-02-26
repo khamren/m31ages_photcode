@@ -1,0 +1,3 @@
+Stuffprob uses output files from allfprep (when sextractor is called) and the output from makemag
+ to match the daophot and sextractor outputs. It retrieves the parameters flag and prob from sextractor
+ and adds them to our file.
