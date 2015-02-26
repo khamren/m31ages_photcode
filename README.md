@@ -7,10 +7,10 @@ Here's how the codes should be ordered:
 
 We assume that the images are in units of counts, are split into chips, and are processed. 
 
-1. mkopt.pro (IDL)
+1. _mkopt.pro (IDL)_
 --> this generates the OPT files for command line DAOPHOT & ALLSTAR
 
-2. [[CHECK THE NAME]].sh (Shell)
+2. _[[CHECK THE NAME]].sh (Shell)_  (Calls: daophot, allstar, lstfilter, goodpsf)
 
 --> copies the OPT file
 
@@ -22,10 +22,8 @@ We assume that the images are in units of counts, are split into chips, and are 
 
 --> runs allstar 
 
-Calls: daophot, allstar, lstfilter, goodpsf
 
-
-3. daophotassess.sh (Shell)
+3. _daophotassess.sh (Shell)_
 
 --> reads log files and produces a messy report of how daophot went
 
@@ -38,12 +36,12 @@ Calls: daophot, allstar, lstfilter, goodpsf
 
 --> MANUAL INTERVENTION: check the prelim CMD and image stuff, redo whatever is necessary
 
-5. getweights_k.sh (Shell)
+5. _getweights_k.sh (Shell)_
 
 --> computes S/N in images + flux ratios of RGB stars to determine an optimal
  weighting scenario to co-add each of the images for each filter
 
-6. alignncombine.cl (IRAF)
+6. _alignncombine.cl (IRAF)_
 
 --> Uses the xy shifts from daomatch and a star list (either made manually or using the XY coordinates of the PSF stars from the primary image) to align the frames. Then combines the frames into a single image using the weights. The output file is called "allf"
 
