@@ -1,0 +1,18 @@
+import sys
+filein = sys.argv[1]
+infile=file(filein)
+inlines=infile.readlines()
+fin = open(filein,"r")
+data_list = fin.readlines()
+fin.close()
+count=0
+for line in inlines:
+     components=line.split()
+     if len(components)!=17:
+             print inlines.index(line)+1
+             temp = inlines.index(line)
+             del data_list[temp-count]
+             count=count+1
+fout=open(filein,"w")
+fout.writelines(data_list)
+fout.close()
