@@ -1,1 +1,25 @@
-Entire N147 photometry directory.
+Entire N147 photometry directory including all IDL code necessary to run programs within the directory.
+
+A few notes on programs:
+-- djs_* are sdssidl codes that are just efficient means of matching sources *in IDL* 
+   run other things in python
+-- runastrom.cl is an adaptation of that for the optical for the NIR data
+
+A few notes on files:
+-- 2mass.tsv is a tab delimited file of all 2MASS stars in the NEWFIRM FOV by loading the image into 
+ ds9 and using its catalog query & filtering tool. 
+A query routine in python would be great. There is a tool in the IRAF/pyRAF/newfirm package to do this.
+-- .out => my matched files for various reasions
+-- .raw => daomaster catalog
+-- *.als => allstar output PSF catalog
+From DAOPHOT:
+-- *.ap  => aperture photometry outputs (photometry)
+-- *.coo => coordinate file outputs (find)
+-- *.grp => grouping outputs (group)
+-- *.iter => iterated PSF list (hand iteration)
+-- *.lst => intitial PSF list (pick)
+-- *.nei => neighbors list (nstar)
+-- *.nst => neighbor subtracted phot (nstar)
+-- *.psf => psf file (psf)
+-- *a.* => files related to an image with PSF neighbors subtracted (substar)
+-- *s.* => files related to removing all stars from the image (allstar)
