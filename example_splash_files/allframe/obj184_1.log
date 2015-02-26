@@ -1,0 +1,552 @@
+===================================
+== Step 1 : Construct PSF ver. 1 ==
+===================================
+
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.67         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.67
+                 PSF RADIUS =    14.67                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.67         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.67
+                 PSF RADIUS =    14.67                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     obj184_1...                   
+
+
+                                      Picture size:   2048  4096
+
+
+ Command: 
+      Sky mode and standard deviation = 1696.508   45.850
+
+              Clipped mean and median = 1700.127 1698.921
+   Number of pixels used (after clip) = 9,576
+                       Relative error = 0.77
+
+                 Number of frames averaged, summed:          File for positions (default obj184_1.coo): 
+ 
+
+   6969 stars.
+
+
+                           Are you happy with this? 
+ Command: 
+      File with aperture radii (default photo.opt): 
+  A1  RADIUS OF APERTURE  1 =     3.00     A2  RADIUS OF APERTURE  2 =     3.80
+  A3  RADIUS OF APERTURE  3 =     4.80     A4  RADIUS OF APERTURE  4 =     6.08
+  A5  RADIUS OF APERTURE  5 =     7.69     A6  RADIUS OF APERTURE  6 =     9.74
+  A7  RADIUS OF APERTURE  7 =    12.32     A8  RADIUS OF APERTURE  8 =    15.60
+  A9  RADIUS OF APERTURE  9 =    19.74     AA  RADIUS OF APERTURE 10 =    24.98
+  AB  RADIUS OF APERTURE 11 =    31.61     AC  RADIUS OF APERTURE 12 =    40.00
+  IS       INNER SKY RADIUS =    45.00     OS       OUTER SKY RADIUS =    50.00
+
+ PHO> 
+        Input position file (default obj184_1.coo):                  Output file (default obj184_1.ap): 
+  Estimated magnitude limit (Aperture 1): 16.7 +- 0.6 per star.                  
+
+
+ Command: 
+             Input file name (default obj184_1.ap):        Desired number of stars, faintest magnitude:            Output file name (default obj184_1.lst): 
+       100 suitable candidates were found.
+
+
+ Command: 
+
+ Good bye.
+
+
+===================================
+== Step 2 : Construct PSF ver. 2 ==
+===================================
+
+
+=============================================
+== Step 3 : Construct final version of PSF ==
+=============================================
+
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.67         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.67
+                 PSF RADIUS =    14.67                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.67         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.67
+                 PSF RADIUS =    14.67                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     obj184_1...                   
+
+
+                                      Picture size:   2048  4096
+
+
+ Command: 
+        File with photometry (default obj184_1.ap):           File with the PSF (default obj184_1.psf):                                   Critical overlap:     File for stellar groups (default obj184_1.grp): 
+ Size of   Number of
+  group     groups
+
+      1       258
+      2        12
+      3         1
+
+    285 stars in  271 groups.  
+
+
+ Command: 
+          File with the PSF (default obj184_1.psf):    File with stellar groups (default obj184_1.grp):            File for results (default obj184_1.nst): 
+ Star     116 has disappeared.
+ Star     288 has disappeared.
+ Star     396 has disappeared.
+ Star     454 has disappeared.
+ Star     912 has disappeared.
+ Star     917 has disappeared.
+ Star    1025 has disappeared.
+ Star    1028 has disappeared.
+ Star    1218 has disappeared.
+ Star    1642 has disappeared.
+ Star    1686 has disappeared.
+ Star    1689 has disappeared.
+ Star    1925 has disappeared.
+ Star    2038 has disappeared.
+ Star    2071 has disappeared.
+ Star    2175 has disappeared.
+ Star    2235 has disappeared.
+ Star    2240 has disappeared.
+ Star    2301 has disappeared.
+ Star    2411 has disappeared.
+ Star    2479 has disappeared.
+ Star    2507 has disappeared.
+ Star    2649 has disappeared.
+ Star    2656 has disappeared.
+ Star    2666 has disappeared.
+ Star    2911 has disappeared.
+ Star    3165 has disappeared.
+ Star    3257 has disappeared.
+ Star    3345 has disappeared.
+ Star    3358 has disappeared.
+ Star    3592 has disappeared.
+ Star    3652 has disappeared.
+ Star    4486 has disappeared.
+ Star    4558 has disappeared.
+ Star    4912 has disappeared.
+ Star    5055 has disappeared.
+ Star    5157 has disappeared.
+ Star    5523 has disappeared.
+ Star    6421 has disappeared.
+ Star    6478 has disappeared.
+ Star    6581 has disappeared.
+ Star    2892 has disappeared.
+ Star    2900 has disappeared.
+ Star    4250 has disappeared.
+ Star    4267 has disappeared.
+ Star    5492 has disappeared.
+
+    Done.  
+
+
+ Command: 
+          File with the PSF (default obj184_1.psf):        File with photometry (default obj184_1.nst):                      Do you have stars to leave in?         File with star list (default obj184_1.lst):      Name for subtracted image (default obj184_1s): 
+ Command: 
+ Command: 
+
+ Good bye.
+
+
+===========================
+== Step 4 : Run ALLSTAR. ==
+===========================
+
+
+             FITTING RADIUS =     3.27        CE (CLIPPING EXPONENT) =     6.00
+      REDETERMINE CENTROIDS =     1.00           CR (CLIPPING RANGE) =     2.50
+             WATCH PROGRESS =     0.00            MAXIMUM GROUP SIZE =    50.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+      IS (INNER SKY RADIUS) =     2.27         OS (OUTER SKY RADIUS) =    14.09
+
+ OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT> 
+             FITTING RADIUS =     3.67        CE (CLIPPING EXPONENT) =     6.00
+      REDETERMINE CENTROIDS =     1.00           CR (CLIPPING RANGE) =     2.50
+             WATCH PROGRESS =     0.00            MAXIMUM GROUP SIZE =    50.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+      IS (INNER SKY RADIUS) =     2.67         OS (OUTER SKY RADIUS) =    15.67
+
+                                  Input image name: 
+     obj184_1...                   
+
+
+                                      Picture size:   2048  4096
+
+
+          File with the PSF (default obj184_1.psf):                   Input file (default obj184_1.ap):            File for results (default obj184_1.als):      Name for subtracted image (default obj184_1s): 
+    6969 stars.  <<
+
+
+ I = iteration number
+
+ R = number of stars that remain
+
+ D = number of stars that disappeared
+
+ C = number of stars that converged
+
+
+
+      I       R       D       C
+      1    6969       0       0  <<
+      2    6969       0       0  <<
+      3    6969       0       0  <<
+      4    5293     191    1485  <<
+      5    2872     430    3667  <<
+      6    1905     542    4522  <<
+      7    1454     661    4854  <<
+      8    1218     746    5005  <<
+      9    1029     844    5096  <<
+     10     878     940    5151  <<
+     11     728    1044    5197  <<
+     12     614    1126    5229  <<
+     13     478    1237    5254  <<
+     14     345    1345    5279  <<
+     15     233    1436    5300  <<
+     16     220    1437    5312  <<
+     17     208    1439    5322  <<
+     18     194    1439    5336  <<
+     19     192    1439    5338  <<
+     20     185    1439    5345  <<
+     21     174    1441    5354  <<
+     22     169    1441    5359  <<
+     23     162    1441    5366  <<
+     24     154    1441    5374  <<
+     25     153    1441    5375  <<
+     26     150    1441    5378  <<
+     27     146    1442    5381  <<
+     28     140    1442    5387  <<
+     29     136    1442    5391  <<
+     30     131    1442    5396  <<
+     31     129    1442    5398  <<
+     32     128    1443    5398  <<
+     33     123    1443    5403  <<
+     34     121    1443    5405  <<
+     35     118    1443    5408  <<
+     36     115    1443    5411  <<
+     37     115    1443    5411  <<
+     38     113    1443    5413  <<
+     39     111    1443    5415  <<
+     40     108    1444    5417  <<
+     41     108    1444    5417  <<
+     42     105    1444    5420  <<
+     43     100    1444    5425  <<
+     44      98    1445    5426  <<
+     45      96    1445    5428  <<
+     46      93    1445    5431  <<
+     47      92    1446    5431  <<
+     48      90    1446    5433  <<
+     49      89    1446    5434  <<
+     50      84    1446    5439  <<
+     51      79    1446    5444  <<
+     52      77    1446    5446  <<
+     53      75    1446    5448  <<
+     54      75    1446    5448  <<
+     55      74    1446    5449  <<
+     56      72    1446    5451  <<
+     57      70    1446    5453  <<
+     58      69    1446    5454  <<
+     59      68    1446    5455  <<
+     60      66    1446    5457  <<
+     61      64    1446    5459  <<
+     62      63    1446    5460  <<
+     63      61    1446    5462  <<
+     64      59    1446    5464  <<
+     65      59    1446    5464  <<
+     66      58    1446    5465  <<
+     67      57    1446    5466  <<
+     68      56    1446    5467  <<
+     69      55    1446    5468  <<
+     70      54    1446    5469  <<
+     71      53    1446    5470  <<
+     72      53    1446    5470  <<
+     73      53    1446    5470  <<
+     74      51    1446    5472  <<
+     75      50    1446    5473  <<
+     76      50    1446    5473  <<
+     77      49    1446    5474  <<
+     78      47    1446    5476  <<
+     79      46    1446    5477  <<
+     80      46    1446    5477  <<
+     81      45    1446    5478  <<
+     82      45    1446    5478  <<
+     83      44    1447    5478  <<
+     84      44    1447    5478  <<
+     85      44    1447    5478  <<
+     86      44    1447    5478  <<
+     87      43    1447    5479  <<
+     88      42    1447    5480  <<
+     89      42    1447    5480  <<
+     90      42    1447    5480  <<
+     91      42    1447    5480  <<
+     92      42    1447    5480  <<
+     93      42    1447    5480  <<
+     94      41    1447    5481  <<
+     95      40    1447    5482  <<
+     96      38    1447    5484  <<
+     97      38    1447    5484  <<
+     98      38    1447    5484  <<
+     99      37    1447    5485  <<
+    100      36    1448    5485  <<
+    101      35    1448    5486  <<
+    102      34    1448    5487  <<
+    103      34    1448    5487  <<
+    104      34    1448    5487  <<
+    105      34    1448    5487  <<
+    106      33    1448    5488  <<
+    107      33    1448    5488  <<
+    108      33    1448    5488  <<
+    109      31    1448    5490  <<
+    110      31    1448    5490  <<
+    111      31    1448    5490  <<
+    112      31    1448    5490  <<
+    113      31    1448    5490  <<
+    114      30    1449    5490  <<
+    115      30    1449    5490  <<
+    116      30    1449    5490  <<
+    117      28    1450    5491  <<
+    118      28    1450    5491  <<
+    119      26    1450    5493  <<
+    120      26    1450    5493  <<
+    121      26    1450    5493  <<
+    122      26    1450    5493  <<
+    123      25    1450    5494  <<
+    124      25    1450    5494  <<
+    125      24    1450    5495  <<
+    126      23    1450    5496  <<
+    127      23    1450    5496  <<
+    128      22    1450    5497  <<
+    129      22    1450    5497  <<
+    130      22    1450    5497  <<
+    131      22    1450    5497  <<
+    132      22    1450    5497  <<
+    133      21    1450    5498  <<
+    134      21    1450    5498  <<
+    135      20    1450    5499  <<
+    136      20    1450    5499  <<
+    137      19    1450    5500  <<
+    138      19    1450    5500  <<
+    139      19    1450    5500  <<
+    140      19    1450    5500  <<
+    141      17    1450    5502  <<
+    142      17    1450    5502  <<
+    143      17    1450    5502  <<
+    144      17    1450    5502  <<
+    145      17    1450    5502  <<
+    146      17    1450    5502  <<
+    147      17    1450    5502  <<
+    148      17    1450    5502  <<
+    149      16    1451    5502  <<
+    150      16    1451    5502  <<
+    151      16    1451    5502  <<
+    152      16    1451    5502  <<
+    153      16    1451    5502  <<
+    154      16    1451    5502  <<
+    155      16    1451    5502  <<
+    156      16    1451    5502  <<
+    157      16    1451    5502  <<
+    158      16    1451    5502  <<
+    159      16    1451    5502  <<
+    160      16    1451    5502  <<
+    161      16    1451    5502  <<
+    162      15    1451    5503  <<
+    163      15    1451    5503  <<
+    164      15    1451    5503  <<
+    165      15    1451    5503  <<
+    166      15    1451    5503  <<
+    167      14    1451    5504  <<
+    168      14    1451    5504  <<
+    169      14    1451    5504  <<
+    170      14    1451    5504  <<
+    171      14    1451    5504  <<
+    172      14    1451    5504  <<
+    173      14    1451    5504  <<
+    174      14    1451    5504  <<
+    175      13    1451    5505  <<
+    176      13    1451    5505  <<
+    177      13    1451    5505  <<
+    178      13    1451    5505  <<
+    179      13    1451    5505  <<
+    180      13    1451    5505  <<
+    181      12    1451    5506  <<
+    182      12    1451    5506  <<
+    183      12    1451    5506  <<
+    184      12    1451    5506  <<
+    185      12    1451    5506  <<
+    186      12    1451    5506  <<
+    187      12    1451    5506  <<
+    188      12    1451    5506  <<
+    189      12    1451    5506  <<
+    190      12    1451    5506  <<
+    191      12    1451    5506  <<
+    192      12    1451    5506  <<
+    193      12    1451    5506  <<
+    194      12    1451    5506  <<
+    195      12    1451    5506  <<
+    196      12    1451    5506  <<
+    197      12    1451    5506  <<
+    198      12    1451    5506  <<
+    199      12    1451    5506  <<
+    200       0    1451    5518
+
+     Finished obj184_1                      
+
+
+ Good bye.
+
+
+===============================================
+== Step 5 : Prepare for aperture correction. ==
+===============================================
+
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.67         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.67
+                 PSF RADIUS =    14.67                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.67         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.67
+                 PSF RADIUS =    14.67                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     obj184_1...                   
+
+
+                                      Picture size:   2048  4096
+
+
+ Command: 
+        File with photometry (default obj184_1.ap):           File with the PSF (default obj184_1.psf):                                   Critical overlap:     File for stellar groups (default obj184_1.grp): 
+ Size of   Number of
+  group     groups
+
+      1       227
+      2        26
+      3         2
+
+    285 stars in  255 groups.  
+
+
+ Command: 
+          File with the PSF (default obj184_1.psf):    File with stellar groups (default obj184_1.grp):            File for results (default obj184_1.nst): 
+ Star     116 has disappeared.
+ Star     288 has disappeared.
+ Star     396 has disappeared.
+ Star     454 has disappeared.
+ Star     912 has disappeared.
+ Star     917 has disappeared.
+ Star    1025 has disappeared.
+ Star    1028 has disappeared.
+ Star    1218 has disappeared.
+ Star    1642 has disappeared.
+ Star    1686 has disappeared.
+ Star    1689 has disappeared.
+ Star    1925 has disappeared.
+ Star    2038 has disappeared.
+ Star    2071 has disappeared.
+ Star    2175 has disappeared.
+ Star    2235 has disappeared.
+ Star    2240 has disappeared.
+ Star    2301 has disappeared.
+ Star    2411 has disappeared.
+ Star    2479 has disappeared.
+ Star    2507 has disappeared.
+ Star    2649 has disappeared.
+ Star    2656 has disappeared.
+ Star    2666 has disappeared.
+ Star    2911 has disappeared.
+ Star    3165 has disappeared.
+ Star    3257 has disappeared.
+ Star    3345 has disappeared.
+ Star    3358 has disappeared.
+ Star    3592 has disappeared.
+ Star    3652 has disappeared.
+ Star    4486 has disappeared.
+ Star    4558 has disappeared.
+ Star    4912 has disappeared.
+ Star    5055 has disappeared.
+ Star    5157 has disappeared.
+ Star    5523 has disappeared.
+ Star    6421 has disappeared.
+ Star    6478 has disappeared.
+ Star    2892 has disappeared.
+ Star    2900 has disappeared.
+ Star    4250 has disappeared.
+ Star    4267 has disappeared.
+ Star    5492 has disappeared.
+
+    Done.  
+
+
+ Command: 
+          File with the PSF (default obj184_1.psf):        File with photometry (default obj184_1.nst):                      Do you have stars to leave in?         File with star list (default obj184_1.lst):      Name for subtracted image (default obj184_1s): 
+ Command: 
+ Command: 
+
+ Good bye.
+
+
+===============================================
+== Step 5 : Prepare for aperture correction. ==
+===============================================
+

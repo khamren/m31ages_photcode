@@ -1,0 +1,85 @@
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     4.61         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     4.61
+                 PSF RADIUS =    18.43                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     4.61         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     4.61
+                 PSF RADIUS =    18.43                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     obj176_1a...                  
+
+
+                                      Picture size:   2048  4096
+
+
+ Command: 
+      File with aperture radii (default photo.opt): 
+  A1  RADIUS OF APERTURE  1 =     3.00     A2  RADIUS OF APERTURE  2 =     3.80
+  A3  RADIUS OF APERTURE  3 =     4.80     A4  RADIUS OF APERTURE  4 =     6.08
+  A5  RADIUS OF APERTURE  5 =     7.69     A6  RADIUS OF APERTURE  6 =     9.74
+  A7  RADIUS OF APERTURE  7 =    12.32     A8  RADIUS OF APERTURE  8 =    15.60
+  A9  RADIUS OF APERTURE  9 =    19.74     AA  RADIUS OF APERTURE 10 =    24.98
+  AB  RADIUS OF APERTURE 11 =    31.61     AC  RADIUS OF APERTURE 12 =    40.00
+  IS       INNER SKY RADIUS =    45.00     OS       OUTER SKY RADIUS =    50.00
+
+ PHO> 
+       Input position file (default obj176_1a.coo): 
+ Error opening obj176_1.plst                 
+
+             Input position file (default GIVE UP): 
+ Error opening obj176_1a.ap                  
+
+             Input position file (default GIVE UP): 
+ Error opening exit                          
+
+             Input position file (default GIVE UP): 
+
+ Command: 
+
+ Good bye.
+
+
+             FITTING RADIUS =     4.61        CE (CLIPPING EXPONENT) =     6.00
+      REDETERMINE CENTROIDS =     1.00           CR (CLIPPING RANGE) =     2.50
+             WATCH PROGRESS =     0.00            MAXIMUM GROUP SIZE =    50.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+      IS (INNER SKY RADIUS) =     3.61         OS (OUTER SKY RADIUS) =    19.43
+
+ OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT> 
+             FITTING RADIUS =     4.61        CE (CLIPPING EXPONENT) =     6.00
+      REDETERMINE CENTROIDS =     1.00           CR (CLIPPING RANGE) =     2.50
+             WATCH PROGRESS =     0.00            MAXIMUM GROUP SIZE =    50.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+      IS (INNER SKY RADIUS) =     3.61         OS (OUTER SKY RADIUS) =    19.43
+
+                                  Input image name: 
+     obj176_1a...                  
+
+
+                                      Picture size:   2048  4096
+
+
+         File with the PSF (default obj176_1a.psf):                File with the PSF (default GIVE UP):                File with the PSF (default GIVE UP):                File with the PSF (default GIVE UP):                File with the PSF (default GIVE UP): 
+
+ Good bye.
+

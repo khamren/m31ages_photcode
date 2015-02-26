@@ -1,0 +1,82 @@
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.82         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.82
+                 PSF RADIUS =    15.28                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.82         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.82
+                 PSF RADIUS =    15.28                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     allf_1a...                    
+
+
+                                      Picture size:   1926  4002
+
+
+ Command: 
+   File with aperture results (default allf_1a.ap):           File with PSF stars (default allf_1.lst):              File for the PSF (default allf_1.psf): 
+ This file already exists: allf_1.psf                    
+
+          New output file name (default OVERWRITE): 
+
+
+       Chi    Parameters...
+>>   0.0275   1.99826   1.94981   
+>>   0.0485   1.37681   1.38650   0.11215   
+>>   0.0219   1.80476   1.75434   0.00909   
+>>   0.0208   1.86475   1.81394   0.00865   
+>>   0.0526   1.65209   1.60466   0.01367   
+>>   0.0203   1.85009   1.79603   0.65053   0.01181   
+
+
+ Profile errors:
+
+    778  0.018       101  0.013       157  0.020       279  0.017      1069  0.034   
+   1730  0.014       743  0.020      2088  0.015       710  0.032       692  0.014   
+    788  0.009       294  0.013       775  0.025      2323  0.019       662  0.033   
+    994  0.016       382  0.013      1400  0.013       607  0.040      1012  0.023   
+   1375  0.014      1939  0.014        40  0.020       400  0.021       461  0.019   
+   1752  0.011       102  0.013      1237  0.017       540  0.013       702  0.018   
+   2211  0.014      1667  0.015       814  0.016      1116  0.022      1851  0.019   
+    267  0.012       697  0.015       805  0.018      2024  0.023       690  0.019   
+    617  0.016      2327  0.014      1588  0.017       537  0.024       539  0.039   
+    187  0.015      2106  0.013      1042  0.016       271  0.019        94  0.018   
+   2422  0.016      1058  0.017       853  0.016       386  0.020      1757  0.024   
+    939  0.014       615  0.022       174  0.029       269  0.027       996  0.022   
+   1800  0.016      1293  0.016      1640  0.027      2152  0.018       474  0.029   
+    283  0.015      1739  0.013      1279  0.025       509  0.020      1613  0.024   
+    357  0.017      2134  0.021      1544  0.014      1117  0.023       998  0.022   
+   2320  0.014       854  0.016       453  0.025      1693  0.019      1612  0.018   
+   2034  0.017      2277  0.020       299  0.024      1603  0.019                    
+    527  0.019      1778  0.017      1657  0.019      1108  0.037                    
+
+
+
+ File with PSF stars and neighbors = allf_1.nei                    
+
+ This file already exists: allf_1.nei                    
+
+          New output file name (default OVERWRITE): 
+ Command: 
+
+ Good bye.
+

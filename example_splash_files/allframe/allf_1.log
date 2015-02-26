@@ -1,0 +1,398 @@
+===================================
+== Step 1 : Construct PSF ver. 1 ==
+===================================
+
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.82         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.82
+                 PSF RADIUS =    15.28                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.82         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.82
+                 PSF RADIUS =    15.28                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     allf_1...                     
+
+
+                                      Picture size:   1926  4002
+
+
+ Command: 
+      Sky mode and standard deviation = 1182.795   28.894
+
+              Clipped mean and median = 1185.612 1184.673
+   Number of pixels used (after clip) = 9,379
+                       Relative error = 0.67
+
+                 Number of frames averaged, summed:            File for positions (default allf_1.coo): 
+ 
+
+   2441 stars.
+
+
+                           Are you happy with this? 
+ Command: 
+      File with aperture radii (default photo.opt): 
+  A1  RADIUS OF APERTURE  1 =     3.00     A2  RADIUS OF APERTURE  2 =     3.80
+  A3  RADIUS OF APERTURE  3 =     4.80     A4  RADIUS OF APERTURE  4 =     6.08
+  A5  RADIUS OF APERTURE  5 =     7.69     A6  RADIUS OF APERTURE  6 =     9.74
+  A7  RADIUS OF APERTURE  7 =    12.32     A8  RADIUS OF APERTURE  8 =    15.60
+  A9  RADIUS OF APERTURE  9 =    19.74     AA  RADIUS OF APERTURE 10 =    24.98
+  AB  RADIUS OF APERTURE 11 =    31.61     AC  RADIUS OF APERTURE 12 =    40.00
+  IS       INNER SKY RADIUS =    45.00     OS       OUTER SKY RADIUS =    50.00
+
+ PHO> 
+          Input position file (default allf_1.coo):                    Output file (default allf_1.ap): 
+  Estimated magnitude limit (Aperture 1): 17.0 +- 0.8 per star.                  
+
+
+ Command: 
+               Input file name (default allf_1.ap):        Desired number of stars, faintest magnitude:              Output file name (default allf_1.lst): 
+       100 suitable candidates were found.
+
+
+ Command: 
+
+ Good bye.
+
+
+===================================
+== Step 2 : Construct PSF ver. 2 ==
+===================================
+
+
+=============================================
+== Step 3 : Construct final version of PSF ==
+=============================================
+
+
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.82         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.82
+                 PSF RADIUS =    15.28                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+  READ NOISE (ADU; 1 frame) =     2.26        GAIN (e-/ADU; 1 frame) =     3.10
+ LOW GOOD DATUM (in sigmas) =     7.00      HIGH GOOD DATUM (in ADU) = 32000.00
+             FWHM OF OBJECT =     3.82         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     3.82
+                 PSF RADIUS =    15.28                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+
+ OPT> 
+ Command: 
+     allf_1...                     
+
+
+                                      Picture size:   1926  4002
+
+
+ Command: 
+          File with photometry (default allf_1.ap):             File with the PSF (default allf_1.psf):                                   Critical overlap:       File for stellar groups (default allf_1.grp): 
+ Size of   Number of
+  group     groups
+
+      1       163
+      2         3
+      3         1
+
+    172 stars in  167 groups.  
+
+
+ Command: 
+            File with the PSF (default allf_1.psf):      File with stellar groups (default allf_1.grp):              File for results (default allf_1.nst): 
+ Star      79 has disappeared.
+ Star     988 has disappeared.
+ Star    1075 has disappeared.
+
+    Done.  
+
+
+ Command: 
+            File with the PSF (default allf_1.psf):          File with photometry (default allf_1.nst):                      Do you have stars to leave in?           File with star list (default allf_1.lst):        Name for subtracted image (default allf_1s): 
+ Command: 
+ Command: 
+
+ Good bye.
+
+
+===========================
+== Step 4 : Run ALLSTAR. ==
+===========================
+
+
+ Error opening input file allstar.opt                                            
+
+
+             FITTING RADIUS =     2.50        CE (CLIPPING EXPONENT) =     6.00
+      REDETERMINE CENTROIDS =     1.00           CR (CLIPPING RANGE) =     2.50
+             WATCH PROGRESS =     1.00            MAXIMUM GROUP SIZE =    50.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+      IS (INNER SKY RADIUS) =     0.00         OS (OUTER SKY RADIUS) =     0.00
+
+ OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT>  OPT> 
+             FITTING RADIUS =     3.82        CE (CLIPPING EXPONENT) =     6.00
+      REDETERMINE CENTROIDS =     1.00           CR (CLIPPING RANGE) =     2.50
+             WATCH PROGRESS =     0.00            MAXIMUM GROUP SIZE =    50.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     5.00
+      IS (INNER SKY RADIUS) =     2.82         OS (OUTER SKY RADIUS) =    16.28
+
+                                  Input image name: 
+     allf_1...                     
+
+
+                                      Picture size:   1926  4002
+
+
+            File with the PSF (default allf_1.psf):                     Input file (default allf_1.ap):              File for results (default allf_1.als):        Name for subtracted image (default allf_1s): 
+    2441 stars.  <<
+
+
+ I = iteration number
+
+ R = number of stars that remain
+
+ D = number of stars that disappeared
+
+ C = number of stars that converged
+
+
+
+      I       R       D       C
+      1    2441       0       0  <<
+      2    2441       0       0  <<
+      3    2441       0       0  <<
+      4    1317      36    1088  <<
+      5     727      45    1669  <<
+      6     504      61    1876  <<
+      7     385      69    1987  <<
+      8     306      75    2060  <<
+      9     253      82    2106  <<
+     10     215      87    2139  <<
+     11     188      99    2154  <<
+     12     166     106    2169  <<
+     13     139     115    2187  <<
+     14     129     121    2191  <<
+     15     118     121    2202  <<
+     16     114     121    2206  <<
+     17     112     122    2207  <<
+     18     110     123    2208  <<
+     19     106     123    2212  <<
+     20     105     124    2212  <<
+     21     100     127    2214  <<
+     22      99     127    2215  <<
+     23      96     127    2218  <<
+     24      95     127    2219  <<
+     25      92     127    2222  <<
+     26      88     129    2224  <<
+     27      85     130    2226  <<
+     28      79     131    2231  <<
+     29      79     131    2231  <<
+     30      78     131    2232  <<
+     31      78     131    2232  <<
+     32      77     131    2233  <<
+     33      76     131    2234  <<
+     34      76     131    2234  <<
+     35      75     131    2235  <<
+     36      72     131    2238  <<
+     37      71     131    2239  <<
+     38      69     131    2241  <<
+     39      68     131    2242  <<
+     40      68     131    2242  <<
+     41      67     131    2243  <<
+     42      67     131    2243  <<
+     43      67     131    2243  <<
+     44      65     131    2245  <<
+     45      65     131    2245  <<
+     46      64     131    2246  <<
+     47      63     132    2246  <<
+     48      62     132    2247  <<
+     49      62     132    2247  <<
+     50      62     132    2247  <<
+     51      60     132    2249  <<
+     52      59     132    2250  <<
+     53      59     132    2250  <<
+     54      58     132    2251  <<
+     55      57     132    2252  <<
+     56      57     132    2252  <<
+     57      57     132    2252  <<
+     58      56     133    2252  <<
+     59      54     133    2254  <<
+     60      52     133    2256  <<
+     61      51     133    2257  <<
+     62      51     133    2257  <<
+     63      51     133    2257  <<
+     64      50     133    2258  <<
+     65      48     134    2259  <<
+     66      47     134    2260  <<
+     67      47     134    2260  <<
+     68      45     134    2262  <<
+     69      45     134    2262  <<
+     70      44     134    2263  <<
+     71      44     134    2263  <<
+     72      44     134    2263  <<
+     73      43     134    2264  <<
+     74      43     134    2264  <<
+     75      42     134    2265  <<
+     76      42     134    2265  <<
+     77      40     134    2267  <<
+     78      39     134    2268  <<
+     79      38     134    2269  <<
+     80      38     134    2269  <<
+     81      38     134    2269  <<
+     82      38     134    2269  <<
+     83      37     135    2269  <<
+     84      35     135    2271  <<
+     85      35     135    2271  <<
+     86      33     135    2273  <<
+     87      33     135    2273  <<
+     88      32     136    2273  <<
+     89      31     136    2274  <<
+     90      30     136    2275  <<
+     91      28     136    2277  <<
+     92      28     136    2277  <<
+     93      28     136    2277  <<
+     94      27     136    2278  <<
+     95      26     136    2279  <<
+     96      26     136    2279  <<
+     97      25     136    2280  <<
+     98      25     136    2280  <<
+     99      25     136    2280  <<
+    100      25     136    2280  <<
+    101      24     136    2281  <<
+    102      24     136    2281  <<
+    103      23     136    2282  <<
+    104      22     136    2283  <<
+    105      21     136    2284  <<
+    106      21     136    2284  <<
+    107      21     136    2284  <<
+    108      21     136    2284  <<
+    109      21     136    2284  <<
+    110      21     136    2284  <<
+    111      19     136    2286  <<
+    112      19     136    2286  <<
+    113      19     136    2286  <<
+    114      19     136    2286  <<
+    115      19     136    2286  <<
+    116      19     136    2286  <<
+    117      19     136    2286  <<
+    118      19     136    2286  <<
+    119      19     136    2286  <<
+    120      18     136    2287  <<
+    121      18     136    2287  <<
+    122      18     136    2287  <<
+    123      18     136    2287  <<
+    124      18     136    2287  <<
+    125      18     136    2287  <<
+    126      18     136    2287  <<
+    127      18     136    2287  <<
+    128      18     136    2287  <<
+    129      18     136    2287  <<
+    130      18     136    2287  <<
+    131      18     136    2287  <<
+    132      17     136    2288  <<
+    133      17     136    2288  <<
+    134      17     136    2288  <<
+    135      17     136    2288  <<
+    136      17     136    2288  <<
+    137      17     136    2288  <<
+    138      16     136    2289  <<
+    139      16     136    2289  <<
+    140      14     136    2291  <<
+    141      14     136    2291  <<
+    142      14     136    2291  <<
+    143      14     136    2291  <<
+    144      14     136    2291  <<
+    145      14     136    2291  <<
+    146      14     136    2291  <<
+    147      14     136    2291  <<
+    148      14     136    2291  <<
+    149      14     136    2291  <<
+    150      14     136    2291  <<
+    151      14     136    2291  <<
+    152      13     136    2292  <<
+    153      12     136    2293  <<
+    154      12     136    2293  <<
+    155      12     136    2293  <<
+    156      12     136    2293  <<
+    157      12     136    2293  <<
+    158      12     136    2293  <<
+    159      12     136    2293  <<
+    160      12     136    2293  <<
+    161      11     136    2294  <<
+    162      11     136    2294  <<
+    163      11     136    2294  <<
+    164      11     136    2294  <<
+    165      10     136    2295  <<
+    166       9     136    2296  <<
+    167       8     136    2297  <<
+    168       7     136    2298  <<
+    169       7     136    2298  <<
+    170       6     136    2299  <<
+    171       6     136    2299  <<
+    172       6     136    2299  <<
+    173       6     136    2299  <<
+    174       6     136    2299  <<
+    175       6     136    2299  <<
+    176       6     136    2299  <<
+    177       6     136    2299  <<
+    178       6     136    2299  <<
+    179       6     136    2299  <<
+    180       5     136    2300  <<
+    181       4     136    2301  <<
+    182       4     136    2301  <<
+    183       4     136    2301  <<
+    184       4     136    2301  <<
+    185       3     136    2302  <<
+    186       3     136    2302  <<
+    187       3     136    2302  <<
+    188       3     136    2302  <<
+    189       3     136    2302  <<
+    190       3     136    2302  <<
+    191       3     136    2302  <<
+    192       3     136    2302  <<
+    193       3     136    2302  <<
+    194       3     136    2302  <<
+    195       3     136    2302  <<
+    196       3     136    2302  <<
+    197       3     136    2302  <<
+    198       3     136    2302  <<
+    199       3     136    2302  <<
+    200       0     136    2305
+
+     Finished allf_1                        
+
+
+ Good bye.
+
