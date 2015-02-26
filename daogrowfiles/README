@@ -1,0 +1,13 @@
+These files prepare for, run, and book-keep the DAOGROW program by Stetson designed to do aperture corrections for ground based photometry. 
+
+apcor.cl: 
+=========
+ IRAF script to do the curve of growth fitting using the default output files. 
+ 
+mkdel:
+======
+ Compiled FORTRAN code to make input files for daogrow.
+
+preapcor.sh:
+============
+ Shell script to run daophot and generate the proper input files for DAOGROW using the final PSF star lists adopted for the PSF. This will replace some of the files originally made by DAOPHOT to ensure everyhing is using the proper PSF. 

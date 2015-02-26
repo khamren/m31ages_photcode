@@ -1,0 +1,85 @@
+ filename = 'all.dat'
+ M_PI = 3.14159265358970323846
+
+;  readcol,'infilelist',filename,fmttype,format='a,l'
+;  no_files = size(filename)
+
+;     readcol,filename[i],id,x,y,ra,dec,d,derr,m,merr,t,terr,chi,sharp,flag,prob,radius,gl,gb,ebv,emt,emd,am,gprob,gerr,xerr,format='l,f,f,d,d,f,f,f,f,f,f,f,f,l,f,d,d,d,f,f,f,f,f,f'
+
+readcol,filename,id,x,y,ra,dec,d,derr,m,merr,t,terr,chi,sharp,flag,prob,radius,gl,gb,ebv,emt,emd,am,format='l,f,f,d,d,f,f,f,f,f,f,f,f,l,f,d,d,d,f,f,f'
+     no_stars = size(id)
+
+ m = m+0.00
+ t = t+0.00
+ d = d-0.00
+ mt = m-t-emt
+ md = m-d-emd
+ m  = m-am
+
+
+cstar = where(abs(chi-1.0) lt 0.5 and abs(sharp) lt 2.5 and merr lt 0.15 and derr lt 0.15 and terr lt 0.15)
+
+ chip1 = where(id lt 2000000)
+ chip2 = where(id lt 3000000 and id gt 2000000)
+ chip3 = where(id lt 4000000 and id gt 3000000)
+ chip4 = where(id lt 5000000 and id gt 4000000)
+
+ erase
+ multiplot,[2,2]
+ 
+ dummy = [0,0]
+
+ offset = 5./60.
+ ramin = max(ra) + offset
+ ramax = min(ra) - offset
+ decmin = min(dec) - offset
+ decmax = max(dec) + offset
+ y_center = min(dec)+(max(dec)-min(dec))/2.
+ x_center = max(ra)+(min(ra)-max(ra))/2.
+ ;-plot one: spatial
+ !x.range = [ramin,ramax]
+ !y.range = [decmin,decmax]
+ plot,dummy,dummy,xstyle=1,ystyle=1,ytit="Dec J!D2000!N"
+ axis,xaxis=1,xtit="RA J!D2000!N",xrange=[y_center-.2,y_center+.2]
+ oplot,ra(cstar),dec(cstar),psym=3
+ ;oplot,ra(gstar),dec(gstar),psym=6,symsize=0.2
+ xyouts,x_center+0.3,y_center+.325,'Spatial Distribution for '+filename[i],charsize=1.2,charthick=3.0
+ ;xyouts,max(ra),min(dec),filename
+
+ ;-plot two: CMD
+ multiplot
+ !x.range = [0,4]
+ !y.range = [25,19]
+ plot,dummy,dummy,xstyle=1,ystyle=1
+ axis,xaxis=1,xtit="(M-T2)!Do!N",/save
+ axis,yaxis=1,ytit="M!Do!N",/save
+ oplot,mt(cstar),m(cstar),psym=3
+ ;oplot,mt(gstar),m(gstar),psym=6,symsize=0.2
+ xyouts,2.3,20.25,'Color-Magnitude',charsize=1.2,charthick=3.0
+ xyouts,3.7,21,'21'
+ xyouts,3.7,23,'23'
+ xyouts,3.7,25,'25'
+
+
+ ;-plot three: cc
+ multiplot
+ !x.range=[0,4]
+ !y.range=[-0.5,0.4]
+ plot,dummy,dummy,xstyle=1,ystyle=1,ytit="(M-DDO51)!Do!N", xtit="(M-T2)!Do!N"
+ oplot,mt(cstar),md(cstar),psym=3
+ ;oplot,mt(gstar),md(gstar),psym=6,symsize=0.2
+ xyouts,2.5,0.35,'Color-Color',charsize=1.2,charthick=3.0
+
+
+ ;-plot four: error distribution 
+ multiplot
+ !x.range=[19,25.0]
+ !y.range=[0,.1]
+ plot,dummy,dummy,xstyle=1,ystyle=1,xtit="DD051 Magnitude"
+ oplot,d(cstar),derr(cstar),psym=3
+ ;oplot,d(gstar),derr(gstar),psym=6,symsize=0.2
+ axis,yaxis=1,ytit="D_err",yrange=[0,0.1],/save
+ ;xyouts,19.5,0.1,'Standard Error Cut',charsize=1.2,charthick=2.0
+ xyouts,19.2,0.08,'Error Distribution',charsize=1.2,charthick=3.0
+ xyouts,25.8,0.1,'0.1'
+ xyouts,25.8,0.15,'0.15'

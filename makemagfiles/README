@@ -1,0 +1,16 @@
+makemag 
+
+-----------
+14 Feb 2011: made version makemag_morelines.f
+-----------
+* was running the code and had a seg fault
+** the input file had 98,000 lines
+** opened makemag.f; seems like the code is set up to handle 30 files of 60,000 lines each
+
+* edited the arrays to be 120,000 lines (instead of 60,000 lines)
+* complied with f95
+** lots of errors -- mostly with variables being declared twice?
+** renamed the second declaration of the variables
+* code finally compiled, and many of the errors were fixed when the last of the 2x declared variables were fixed
+** ran code on file without trouble
+

@@ -1,0 +1,29 @@
+id     int    %12d
+RA      real    %15.10f        # x coordinate in filter V
+DEC      real    %15.10f        # y coordinate in filter V
+D              real    %9.4f        # x coordinate in filter V
+Derr      real    %9.4f        # y coordinate in filter V
+M              real    %9.4f        # x coordinate in filter V
+Merr      real    %9.4f        # y coordinate in filter V
+T              real    %9.4f        # x coordinate in filter V
+Terr      real    %9.4f        # y coordinate in filter V
+chi      real    %9.4f        # instrumental magnitude in filter V
+rou    real    %9.4f        # instrumental magnitude in filter V
+flag   real    %9.4f
+prob   real    %9.4f
+l             real    %7.3f
+b             real    %7.3f
+EBV     real    %9.5f
+AM      real    %9.5f
+EMT     real    %9.5f
+EMD     real    %9.5f
+xsi     real    %15.10f
+eta     real    %15.10f
+radii   real    %9.4f
+field   char    %a4       4
+#gprob   real    %9.4f
+#gerr    real   %9.4f
+#ierr    real    %9.4f
+#serr    real    %9.4f
+#dist    real    %9.5f
+#hidist   real    %9.5f
