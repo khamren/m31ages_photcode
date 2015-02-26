@@ -22,7 +22,6 @@ We assume that the images are in units of counts, are split into chips, and are 
 
 --> runs allstar 
 
-
 3. _daophotassess.sh (Shell)_
 
 --> reads log files and produces a messy report of how daophot went
