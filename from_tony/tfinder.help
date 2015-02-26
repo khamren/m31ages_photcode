@@ -1,0 +1,92 @@
+# Example for using USNOTAB, TFINDER, and CCTRAN
+
+1. USNOTAB
+
+gridred :
+epar usnotab 
+
+2. TFINDER
+
+finder :
+epar tfinder
+
+                     Image Reduction and Analysis Facility
+PACKAGE = finder
+   TASK = tfinder
+
+image   =       obj4088_1.fits  Image name
+(rootnam=                 P0C1) Alternate root name for output files
+(objects=                     ) List of program object X,Y coords
+
+(scale  =                0.258) Plate or image scale ("/pixel)
+(north  =                 left) Direction of North in the field
+(east   =               bottom) Direction of East in the field
+
+(ra     =      10.151117138889) RA  of the reference point (hours)
+(dec    =           ) Dec of the reference point (degrees)
+(equinox=                2000.) Reference coordinate equinox
+
+(xref   =                INDEF) X coordinate of the reference point
+(yref   =                INDEF) Y coordinate of the reference point
+(date_ob=           1998-11-17) Date of the observation (YYYY-MM-DD)
+
+(update =                  yes) Update image header WCS following fit?
+(interac=                  yes) Enter interactive image cursor loop?
+(autocen=                   no) Center at the catalog coords when entering task?
+(reselec=                  yes) Apply selectpars when entering task?
+(autodis=                  yes) Redisplay after all-source keystroke command?
+(verbose=                  yes) Print a running commentary?
+
+(rotate =                   0.) Relative position angle (CCW positive)
+(boxsize=                    9) Centering box full width
+(edge   =                 200.) Edge buffer width (pixels)
+
+(opaxis =                   no) Is the reference point on the optical axis?
+(del_ra =                   0.) RA offset of the field center (degrees)
+(del_dec=                   0.) Dec offset of the field center (degrees)
+
+(list   =                     )
+(mode   =                   al)
+
+* Use 'l' keys twice to match star-to-star (about 10-20 stars in total) 
+-> 'e' key to fit those matched stars first
+-> 'x' and 'y' keys to look residuals in each axis
+-> 'd' key to delete stars and 'f' key to refit
+-> 'q' to exit from the fitting display
+-> 'a' and 'j' to match all of the stars at a time
+-> 'e' to confirm the match
+-> 'q' to exit again
+-> 'f' key to write the resulting WCS into the image header
+-> 'q' to exit from the fitting display
+-> 'q' to exit from the TFINDER task
+
+3. CCTRAN
+
+                     Image Reduction and Analysis Facility
+PACKAGE = imcoords
+   TASK = cctran
+
+input   =                edge1  The input coordinate files
+output  =        P0.edge1.posn  The output coordinate files
+database=              P0C1.db  The input database file
+solution=            obj4088_1  The input plate solutions
+(geometr=            geometric) Transformation type (linear,geometric)
+(forward=                  yes) Transform x / y to ra / dec (yes) or vice versa (no) ?
+(xref   =                INDEF) The X reference pixel
+(yref   =                INDEF) The Y reference pixel
+(xmag   =                INDEF) The X axis scale in arcsec per pixel
+(ymag   =                INDEF) The Y axis scale in arcsec per pixel
+(xrotati=                INDEF) The X axis rotation angle in degrees
+(yrotati=                INDEF) The Y axis rotation angle in degrees
+(lngref =                INDEF) The ra / longitude reference coordinate in lngunits
+(latref =                INDEF) The dec / latitude reference coordinate in latunits
+(lngunit=                     ) The input / output ra / longitude reference coordinate units
+(latunit=                     ) The input / output dec / latitude reference coordinate units
+(project=                  tan) The sky projection geometry
+(xcolumn=                    2) Input column containing the x / ra / longitude coordinate
+(ycolumn=                    3) Input column containing the y / dec / latitude coordinate
+(lngform=               %15.9f) Output format of the ra / longitude / x coordinate
+(latform=               %15.9f) Output format of the dec / latitude / y coordinate
+(min_sig=                    7) Minimum precision of the output coordinates
+(mode   =                   ql)
+
