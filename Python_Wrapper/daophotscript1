@@ -1,0 +1,24 @@
+#!/bin/csh
+
+set image = filler
+
+daophot << END_DAOPHOT >> ${image}_step1.log
+OPTIONS
+${image}.opt
+
+ATTACH $image
+FIND
+1,1
+${image}.coo
+y
+PHOTOMETRY
+
+
+${image}.coo
+${image}.ap
+PICKPSF
+${image}.ap
+100,25
+${image}.lst
+EXIT
+END_DAOPHOT

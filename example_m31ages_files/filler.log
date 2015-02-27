@@ -1,0 +1,81 @@
+
+  READ NOISE (ADU; 1 frame) =     1.00        GAIN (e-/ADU; 1 frame) =     8.00
+ LOW GOOD DATUM (in sigmas) =    15.00      HIGH GOOD DATUM (in ADU) =   600.00
+             FWHM OF OBJECT =     2.50         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     2.50
+                 PSF RADIUS =    14.00                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     4.00
+
+ Command: 
+ File with parameter values (default KEYBOARD 
+                                            INPUT): 
+ Error opening input file filler.opt                                             
+
+
+  READ NOISE (ADU; 1 frame) =     1.00        GAIN (e-/ADU; 1 frame) =     8.00
+ LOW GOOD DATUM (in sigmas) =    15.00      HIGH GOOD DATUM (in ADU) =   600.00
+             FWHM OF OBJECT =     2.50         THRESHOLD (in sigmas) =     3.50
+  LS (LOW SHARPNESS CUTOFF) =     0.20    HS (HIGH SHARPNESS CUTOFF) =     1.00
+  LR (LOW ROUNDNESS CUTOFF) =    -1.00    HR (HIGH ROUNDNESS CUTOFF) =     1.00
+             WATCH PROGRESS =    -2.00                FITTING RADIUS =     2.50
+                 PSF RADIUS =    14.00                  VARIABLE PSF =     2.00
+              SKY ESTIMATOR =     0.00            ANALYTIC MODEL PSF =    -6.00
+  EXTRA PSF CLEANING PASSES =     5.00       USE SATURATED PSF STARS =     0.00
+       PERCENT ERROR (in %) =     0.75          PROFILE ERROR (in %) =     4.00
+
+ OPT> 
+ Command: 
+     filler...                     
+
+
+ Unable to open filler                        
+
+
+ Command: 
+    No picture file has been ATTACHed.
+
+
+ Command: 
+    Unrecognized command.
+
+
+ Command: 
+    No picture file has been ATTACHed.
+
+
+ Command: 
+ Command: 
+    No picture file has been ATTACHed.
+
+
+ Command: 
+ Command: 
+ Command: 
+    No picture file has been ATTACHed.
+
+
+ Command: 
+    No picture file has been ATTACHed.
+
+
+ Command: 
+                                   Input file name: 
+ Error opening input file filler.ap                     
+
+
+ Command: 
+    Unrecognized command.
+
+
+ Command: 
+    No picture file has been ATTACHed.
+
+
+ Command: 
+
+ Good bye.
+
