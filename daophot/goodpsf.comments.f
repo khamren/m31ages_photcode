@@ -17,8 +17,9 @@ C -- (CHI - 1.0) < 0.5 is a good set of cuts.
 C
       PARAMETER(nmax=1000,minchi=0.5)
 C
-C 'minchi' is the minimum CHI value allowed for a PSF star.
-C You may change this value to fit your needs.
+C -- 'minchi' is the minimum CHI value allowed for a PSF star.
+C -- You may change this value to fit your needs.
+C -- I'm not sure this is ever used?
 C
       INTEGER i,j,k,n,nr,id(nmax),iid(nmax),nstar,npsf,istar,ibadstar
       REAL x(nmax),y(nmax),mag(nmax),err(nmax),sky(nmax)
@@ -105,7 +106,9 @@ C
 C -- check to see what the flags are, if its ? or *, then reject the star
 C --  practically, this is 2x and 3x sigma of the chi^2 values for the set of stars
 C -- Then its testing the values to fit in some parameter range
-C --
+C  
+C -- okay, so minchi is obviously not the min(chi) acceptable, but the min(chi) that is
+C --  unacceptable, which isreally quite bizarre.
 C 
          IF (flag(i).NE.'?' .AND. flag(i).NE.'*' 
      .                      .AND. chi(i).LT.minchi) THEN
@@ -127,6 +130,10 @@ C -- if we reject the star, then we decrement the number of input stars
          ENDIF
 1     ENDDO
       CLOSE(21)
+C
+C -- another one of those weird fortran things wehre you reference a line using a code instead
+C --   of putting the information where it is actually useful to have it
+C 
 70    FORMAT(I7,5F9.3):
 C
 C -- Writing some results to the screen here based on the count of stars
