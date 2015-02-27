@@ -74,6 +74,7 @@ C -- if a star is saturated it will say saturated instead of chi^2
 C --  (this might be where the code breaks)
 C -- another option is chi^2 = defective, I don't know 100% what that means, but 
 C --  assumed it was really bad and I remove those stars.
+C -- **Looks like the shell script tries to remove the saturate & defective**
 C 
       k = (nstar-1)/5 + 1
       OPEN(12,FILE=chifile)
@@ -109,12 +110,19 @@ C
          IF (flag(i).NE.'?' .AND. flag(i).NE.'*' 
      .                      .AND. chi(i).LT.minchi) THEN
             DO j = 1, nstar
+C
+C -- matching stars from the .lst file and the .chi file by their IDs
+C --  if a star passes the previous test, then write out the information from
+C --  the .lst file to a new .lst file that will be used for the next PSF run
+C -- 
+C
                IF (id(j).EQ.iid(i)) THEN
                   WRITE(21,70) id(j),x(j),y(j),mag(j),err(j),sky(j)
                   GOTO 1
                ENDIF
             ENDDO
          ELSE
+C -- if we reject the star, then we decrement the number of input stars
             npsf = npsf -1
          ENDIF
 1     ENDDO
