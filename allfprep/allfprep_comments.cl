@@ -19,16 +19,26 @@
 # daophot & allstar. Comments were added to make this code less opague.
 #  06/13/2007
 
+ # -- declaration line of the iraf task
 procedure allfprep(image,xoff,yoff,okay)
 
+ # -- set the required input aparemters from the task epar window
 string  image {prompt="Image name that you want to use as psf"}
+ #
+ # -- montage is an old school image alignment code
+ # -- here, we just need to know the x and y ofsets of the co-added frame
+ # --  from whatever the "master" frame is for the photometry
+ # 
 real    xoff  {prompt="X montage offset value"}
 real    yoff  {prompt="Y montage offset value"}
+ # -- the code will interact with you (totally not necessary) and ask you if its done a good job
+ # -- I would remove this section
 bool okay  {prompt="Is the SExtractor finding all the stars?"}
 
 
 begin
 
+# -- declare all of our variables because this is a C program (Effecively)
         string image1
         real xoff1,yoff1
         bool okay1
@@ -42,11 +52,22 @@ begin
 while(!okay1) {
 
 # Initial run of SExtractor -- output sex.cat
+# -- running SExtractor from the command line on the file allf.fits
+# --  using the configuration file default.sex in this directory
+# --- it relies on additional files for SExtractor (default.conv, default.nnw and default.param)
+# -- default.conv  = convolution kernal, here a 4x4 pixel Gaussian-y thing
+#    default.nnw   = neural network weights to separate stars/galaxies
+#    default.param = parameters to output to file, here set up to mimic daophot
+#    default.sex   = input parameters to setup the star finding and calculations
+#
 !sex allf.fits -c default.sex
 
+# -- this would make the image display better
 #set stdimage=imt4096
 
-# Display image allf.fits
+# Display image allf.fits 
+# **I would not do this part** 
+# -- display the image in whatever image display is open
 display ("allf.fits",1, bpmask="BPM", bpdisplay="none", bpcolors="red", overlay="", ocolors="green", erase=yes, border_erase=no, select_frame=yes, repeat=no, fill=yes, zscale=yes, contrast=0.25, zrange=yes, zmask="", nsample=1000, xcenter=0.5, ycenter=0.5, xsize=1., ysize=1., xmag=1., ymag=1., order=0, z1=INDEF, z2=INDEF, ztrans="linear", lutfile="") 
 
 # Edit SExtractor output file to contain only X, Y for use in TVMARK
@@ -78,20 +99,27 @@ imdelete ("sex1s.fits,sex1s.fits,sex2s.fits",yes, verify=no, default_acti=yes)
 # RLB -- 06/13/2007
 #rfits ("allf.fits","", "allf.imh", make_image=yes, long_header=no, short_header=yes, datatype="",blank=0., scale=yes, oldirafname=no, offset=0)
 
+# copying the SExtractor output catalog (sex.cat) to another file 
 copy ("sex.cat","sex1.cat", verbose=yes)
 
+# copying the stupid daophot header into the new file
 head (image1//".als",nlines=3, > "tmp")  
 
+# appending the header file (tmp) to the top of the sex1.cat file
 concatenate ("tmp,sex1.cat","sex1.tmp", out_type="in_type", append=no)
 
+# cleaning up temporary files
 delete ("sex1.cat,sex.cmb,sex.repl,sex1.als,sex1.off,sex2.als,sex2.cat,sex2.off",yes, verify=no, default_acti=yes, allversions=yes, subfiles=yes)
 
-
+# uh, renaming some files for some reason
 rename ("sex1.tmp","sex1.cat", field="all")
 
 # Create an input file for Allstar
 # Here it is running on allf.fits, with input coorindate sex1.cat and psf by input-image.psf
-# Output: sex1.als & sex1s.fits
+#  Output: sex1.als & sex1s.fits
+# -- The key bit is that ALLStar will subtract the stars from the image, so we can
+#     run the source finding again.
+#
 print("    ", >> "tmp.inp")
 print("allf", >> "tmp.inp")
 print(image1//".psf", >> "tmp.inp")
@@ -108,18 +136,21 @@ delete ("tmp.inp",yes, verify=no, default_acti=yes, allversions=yes, subfiles=ye
 #wfits ("sex1s.imh","sex1s.fits", no, 1., 0., fextn="fits", extensions=no, global_hdr=yes,make_image=yes, long_header=no, short_header=yes, bitpix=0, blocking_fac=0,scale=yes, autoscale=yes)
 
 # Run SExtractor on star subtracted image from Allstar
+#  using identical parameters as before
 !sex sex1s.fits -c default.sex
+# as before, copy over the files
 copy ("sex.cat","sex2.cat", verbose=yes)
 
+# -- again append the stupid daophot header to the top of the sextractor output
 concatenate ("tmp,sex2.cat","sex2.tmp", out_type="in_type", append=no)
 
+# -- clean up
 delete ("sex2.cat",yes, verify=no, default_acti=yes, allversions=yes, subfiles=yes)
-
+# -- rename
 rename ("sex2.tmp","sex2.cat", field="all")
 
-
 # Make input file for daophot.
-# Run offset in daophot to offset the star ID in star subtracted catalog.
+# Run offset in daophot to offset the star ID for those stars found in the star-subtracted image.
 # Append new list to old list for master star list sex.cmb 
 print("offset", >> "tmp.inp")
 print("sex2.cat", >> "tmp.inp")
@@ -129,6 +160,8 @@ print("append", >> "tmp.inp")
 print("sex1.als", >> "tmp.inp")
 print("sex2.off", >> "tmp.inp")
 print("sex.cmb", >> "tmp.inp")
+
+# run the commands in daophot, write to a log file
 !daophot < tmp.inp >> allfprep.log
 
 # Delete daophot input file
@@ -143,12 +176,15 @@ print(image1//".psf", >> "tmp.inp")
 print("sex.cmb", >> "tmp.inp")
 print("sex2.als", >> "tmp.inp")
 print("sex2s", >> "tmp.inp")
+# run allstar on the catalog from the star subtracted image
+#  write results to the log file
 !allstar < tmp.inp >> allfprep.log
 
 # Delete allstar input file
 delete ("tmp.inp",yes, verify=no, default_acti=yes, allversions=yes, subfiles=yes)
 
-# Make input file for Daophot.
+# Make an input file for Daophot.
+#  Daophot is used
 # First: run offset to apply x,y shifts from super-stacked image to reference image
 #  on sex2.als output, makes allf.mag file for allframe input
 # Second: rename original catalog sex1.cat, sex1.off
@@ -168,12 +204,13 @@ print("sex1.off", >> "tmp.inp")
 print("sex2.off", >> "tmp.inp")
 print("sex.repl", >> "tmp.inp")
 print("  ", >> "tmp.inp")
+
+# run daophot to create a master list for running allframe
 !daophot < tmp.inp >> allfprep.log
 
 # Deletes daophot input file
 delete ("tmp.inp",yes, verify=no, default_acti=yes, allversions=yes, subfiles=yes)
-
+# deletes other files
 delete ("tmp",yes, verify=no, default_acti=yes, allversions=yes, subfiles=yes)
-
 
 end
