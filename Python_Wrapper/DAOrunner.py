@@ -2,7 +2,8 @@ import os
 import shutil
 import numpy as np
 
-from DAOsuite import *
+from DAOsuite import * #imports runDAOPHOT1, runDAOPHOT2
+from goodpsf import * #imports goodpsf
 
 
 def main(image):
@@ -23,38 +24,48 @@ def main(image):
     for e in extentions:
         os.remove('%s.%s' %(image.e))
 
-    #create log file
-    logf = open('%s.log' %(image), 'w')
-
-
 #-------------------------------------------------------------------------------------
-    #Step 1: Construct PSF
-    logf.write("=================================== \n")
-    logf.write("== Step 1 : Construct PSF ver. 1 == \n")
-    logf.write("=================================== \n")
-    logf.write("\n")
+    '''
+    Step 1: Run DAOFIND, PICKPSF (runDAOPHOT1), filter those PSF sources (lstfilter)
+            and run PSF (runDAOPHOT2)
 
+    '''
     #copy {image}.opt file to daophot.opt for safety
     os.remove('daophot.opt')
     shutil.copy('%s.opt' %(image), 'daophot.opt')
 
-    runDAOPHOT1(image)
-    lstfilter(image)
-    runDAOPHOT2(image)
+    runDAOPHOT1(image) #Outputs coordinates (.coo), apertures (.ap), and psf list (.lst) files
+    lstfilter(image) #Takes in {image}.lst, outputs {image}.lst1
+    runDAOPHOT2(image) #Outputs .psf file and .psf.log file
 
 #-------------------------------------------------------------------------------------
-    #Step 1: filter out bad PSF stars and construct a second version of PSF
+    '''
+    Step 2: filter out bad PSF stars and construct a second version of PSF
+            Functionality of the older code has been folded into goodpsf.py
+            See that documentation for an explanation
+    '''
 
     os.remove('%s.lst2' %(image))
-    os.remove('%s.lst1.chi' %(image))
-    os.remove('%s.lst2.chi' %(image))
+    goodpsf('%s.lst1' %(image), '%s.psf.log' %(image), '%s.lst2' %(image))
+    os.rename('%s.psf.log' %(image), 'LogFiles/%s.psf.log.V1' %(image))
 
-    logf.write("=================================== \n")
-    logf.write("== Step 1 : Construct PSF ver. 1 == \n")
-    logf.write("=================================== \n")
-    logf.write("\n")
+    runDAOPHOT3(image)
+    os.rename('%s.psf.log' %(image), 'LogFiles/%s.psf.log.V2' %(image))
+#-------------------------------------------------------------------------------------              
+    '''
+    Step 3: Subtract neighbor stars and construct a final PSF
 
-    ln1='grep -n "Profile errors:" %s.psf.log | sed 's/:/ /g' | awk '(NR==1){print $1+2}''
-    
+    '''
 
-    
+    extensions = ['.grp','.nst','a.fits','.lst2.chi','.lst3','.lst3.chi','.plst','.psf.log','.plst.chi','.psf.log']
+    for e in extentions:
+        os.remove('%s.%s' %(image.e))    
+
+    runDAOPHOT4(image)
+    goodpsf('%s.lst2' %(image), '%.psf.log' %(image), '%s.lst3' %(image))
+    os.rename('%s.psf.log' %(image), 'LogFiles/%s.psf.log.V3' %(image))
+
+    #Rerun PSF and goodpsf
+    runDAOPHOT5(image) 
+
+

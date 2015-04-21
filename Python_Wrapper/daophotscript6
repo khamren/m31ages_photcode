@@ -6,10 +6,10 @@ daophot << END_DAOPHOT >> ${image}.psf.log
 OPTIONS
 ${image}.opt
 
-ATTACH $image
+ATTACH ${image}a
 PSF
 ${image}.ap
-${image}.lst1
+${image}.lst3
 ${image}.psf
 
 EXIT

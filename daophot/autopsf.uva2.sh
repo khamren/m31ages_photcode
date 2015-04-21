@@ -109,12 +109,12 @@ y
 PHOTOMETRY
 
 
-${image}.coo
-${image}.ap
+${image}.coo ### Input coordinates file
+${image}.ap  ### Out put apertures file
 PICKPSF
-${image}.ap
+${image}.ap ###Input file name
 100,25
-${image}.lst
+${image}.lst ###Output list of PSF stars
 EXIT
 END_DAOPHOT
 #
@@ -134,9 +134,9 @@ ${image}.opt
 
 ATTACH $image
 PSF
-${image}.ap
-${image}.lst1
-${image}.psf
+${image}.ap ###input aperture file
+${image}.lst1 ###input list of psf stars (that has gone through lstfilter)
+${image}.psf ###output psf file
 
 EXIT
 END_DAOPHOT

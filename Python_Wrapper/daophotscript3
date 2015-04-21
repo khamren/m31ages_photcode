@@ -9,7 +9,7 @@ ${image}.opt
 ATTACH $image
 PSF
 ${image}.ap
-${image}.lst1
+${image}.lst2
 ${image}.psf
 
 EXIT
