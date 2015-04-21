@@ -1,0 +1,27 @@
+#!/bin/csh
+
+set image = filler
+
+daophot << END_DAOPHOT >> ${image}_step3.log
+OPTIONS
+${image}.opt
+
+ATTACH $image
+GROUP
+${image}.nei
+${image}.psf
+5.
+${image}.grp
+NSTAR
+${image}.psf
+${image}.grp
+${image}.nst
+SUBSTAR
+${image}.psf
+${image}.nst
+y
+${image}.lst2
+${image}a
+
+EXIT
+END_DAOPHOT

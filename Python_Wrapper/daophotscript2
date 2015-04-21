@@ -2,7 +2,7 @@
 
 set image = filler
 
-daophot << END_DAOPHOT >> ${image}_step2.log
+daophot << END_DAOPHOT >> ${image}.psf.log
 OPTIONS
 ${image}.opt
 

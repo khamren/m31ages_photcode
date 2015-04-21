@@ -1,0 +1,16 @@
+#!/bin/csh
+
+set image = filler
+
+daophot << END_DAOPHOT >> ${image}.psf.log
+OPTIONS
+${image}.opt
+
+ATTACH ${image}a
+PSF
+${image}.ap
+${image}.lst2
+${image}.psf
+
+EXIT
+END_DAOPHOT
