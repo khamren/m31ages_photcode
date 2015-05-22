@@ -44,3 +44,30 @@ We assume that the images are in units of counts, are split into chips, and are 
 18. __mkchartform.pro (IDL):__ does some book-keeping and pulls extinction from Schelgal maps; does conversion from E(B-V) to the proper colors/magnitudes; computes a radial distance from the dSph/M31. 
 
 
+Questions
+
+1. 
+2. DAOrunner.py performs all of the steps in autopsf.uva2.sh
+3. What is this?
+4. daomatch.sh missing from git
+5. 
+6. alignncombine.cl missing from git
+7. getpsf.sh seems identical to autopsf.uva2.sh, why is this a separate code
+8. Why have we suddenly switched to using SExtractor rather than DAOFIND. ANSWER - speed!!
+9. 
+
+
+Python'd version
+1. - 6. SKIP
+7. Start here. getpsf.sh == autopsf.uva2.sh
+8. yes
+9. yes
+10. SKIP
+11. SKIP (we want chi and sharp for J and K independently)
+12. SKIP
+13. yes (and modify), because we have a lot of galaxies and prob will help
+14. yes
+15. SKIP
+16. heavily modify - just apply the aperture correction, zeropoint, E(B-V) --> E(J-K)
+17. modify - convert pixels to RA/DEC
+
